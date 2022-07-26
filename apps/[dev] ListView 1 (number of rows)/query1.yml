@@ -1,0 +1,54 @@
+id: query1
+type: datasource
+subtype: SqlQuery
+resourceName: '[dev] bigquery'
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - databasePasswordOverride: ''
+    - queryDisabledMessage: ''
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: 0
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: true
+    - query: ''
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: 0
+    - privateParams: []
+    - triggersOnSuccess: []
+    - runWhenPageLoadsDelay: ''
+    - data: null
+    - importedQueryInputs:
+        ordered: []
+    - showSuccessConfetti: false
+    - isImported: false
+    - showSuccessToaster: true
+    - dataArray: []
+    - cacheKeyTtl: ''
+    - triggersOnFailure: []
+    - databaseNameOverride: ''
+    - confirmationMessage: null
+    - isFetching: false
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - watchedParams: []
+    - timestamp: 0
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - runWhenPageLoads: false
+    - transformer: >-
+        // type your code here
+
+        // example: return formatDataAsArray(data).filter(row => row.quantity >
+        20)
+
+        return data
+    - queryTimeout: '10001'
+    - requireConfirmation: false
+    - enableCaching: false
+    - databaseUsernameOverride: ''
+    - shouldEnableBatchQuerying: false
+    - queryThrottleTime: '750'
+createdAt: 2020-04-09T04:52:15.725Z

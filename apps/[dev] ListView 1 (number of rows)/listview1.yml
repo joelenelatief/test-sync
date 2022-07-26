@@ -1,0 +1,16 @@
+id: listview1
+type: widget
+subtype: ListViewWidget
+template:
+  ordered:
+    - data: ''
+    - instances: '{{radiogroup1.value}}'
+    - itemHeight: '3'
+    - scroll: false
+position2:
+  position2:
+    row: 7
+    col: 3
+    height: 14
+    width: 8
+createdAt: 2020-04-09T04:53:29.760Z

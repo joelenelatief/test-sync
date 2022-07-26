@@ -1,0 +1,17 @@
+id: checkbox1
+type: widget
+subtype: CheckboxWidget
+template:
+  ordered:
+    - label: Checkbox label
+    - value: false
+    - disabled: ''
+    - onCheckQuery: ''
+    - onUncheckQuery: ''
+position2:
+  position2:
+    container: listview1
+    col: 4
+    height: 1
+    width: 2
+createdAt: 2020-04-09T04:54:26.694Z

@@ -1,0 +1,22 @@
+id: radiogroup1
+type: widget
+subtype: RadioGroupWidget
+template:
+  ordered:
+    - values: |-
+        [1,2,3,4
+        ]
+    - tooltipText: ''
+    - value: '3'
+    - label: Numbers
+    - labelMaxWidth: ''
+    - labelPlacedOnLeft: false
+    - onChangeQuery: ''
+    - disabled: ''
+    - labels: ''
+position2:
+  position2:
+    col: 8
+    height: 5
+    width: 2
+createdAt: 2020-04-09T05:19:01.406Z
