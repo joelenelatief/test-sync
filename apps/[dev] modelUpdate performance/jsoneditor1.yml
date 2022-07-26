@@ -1,0 +1,25 @@
+id: jsoneditor1
+type: widget
+subtype: JSONEditorWidget
+template:
+  ordered:
+    - value: |-
+        {
+          "a": {
+            "b": [1,2,3,4,5,6,7,8,9],
+            "c": {
+              "d": false
+            },
+            "e": "hi"
+          }
+        }
+    - valid: true
+style:
+  ordered: []
+position2:
+  position2:
+    row: 17.999999999999996
+    col: 6
+    height: 8
+    width: 6
+createdAt: 2021-07-01T19:06:14.291Z

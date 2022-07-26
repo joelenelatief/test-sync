@@ -1,0 +1,28 @@
+id: segmentedcontrol1
+type: widget
+subtype: SegmentedControlWidget
+template:
+  ordered:
+    - values: '[''left'', ''right'']'
+    - hidden: false
+    - validationMessage: ''
+    - tooltipText: ''
+    - labelAlign: left
+    - value: left
+    - label: Label
+    - _validate: false
+    - invalid: false
+    - disabled: false
+    - labelPosition: left
+    - errorMessage: ''
+    - required: false
+    - labels: '[''Left'', ''Right'']'
+style:
+  ordered: []
+position2:
+  position2:
+    row: 7.600000000000002
+    col: 6
+    height: 0.8
+    width: 4
+createdAt: 2021-07-01T18:57:26.325Z

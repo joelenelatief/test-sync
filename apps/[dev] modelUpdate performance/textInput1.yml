@@ -1,0 +1,39 @@
+id: textInput1
+type: widget
+subtype: TextInputWidget2
+template:
+  ordered:
+    - spellCheck: false
+    - iconAfter: ''
+    - autoComplete: false
+    - maxLength: null
+    - hidden: false
+    - patternType: ''
+    - textBefore: ''
+    - validationMessage: ''
+    - textAfter: ''
+    - pattern: ''
+    - tooltipText: ''
+    - labelAlign: left
+    - value: ''
+    - autoFill: ''
+    - placeholder: Enter value
+    - label: Text input
+    - _validate: false
+    - invalid: false
+    - iconBefore: ''
+    - minLength: null
+    - events: []
+    - autoCapitalize: none
+    - disabled: false
+    - labelPosition: left
+    - errorMessage: ''
+    - required: false
+style:
+  ordered: []
+position2:
+  position2:
+    row: 1.4
+    height: 1
+    width: 6
+createdAt: 2021-06-23T23:51:49.075Z

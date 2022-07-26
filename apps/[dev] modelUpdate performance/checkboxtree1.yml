@@ -1,0 +1,101 @@
+id: checkboxtree1
+type: widget
+subtype: CheckboxTreeWidget
+template:
+  ordered:
+    - delimiter: '-'
+    - checked:
+        array: []
+    - checkedPathArray:
+        array: []
+    - onChange: ''
+    - tooltipText: ''
+    - structure: |-
+        [
+          {
+            "label": "Shoes",
+            "value": "shoes",
+            "children": [
+              {
+                "label": "Atheletic",
+                "value": "athletic",
+                "children": [
+                  {
+                    "label": "Tennis Shoes",
+                    "value": "tennis"
+                  },
+                  {
+                    "label": "Running",
+                    "value": "running"
+                  }
+                ]
+              },
+              {
+                "label": "Dress Shoes",
+                "value": "dress"
+              },
+              {
+                "label": "Sandals",
+                "value": "sandals",
+                "children": [
+                  {
+                    "label": "Flip-Flop",
+                    "value": "flipflop"
+                  },
+                  {
+                    "label": "Thong",
+                    "value": "thong"
+                  },
+                  {
+                    "label": "Fisherman",
+                    "value": "fisherman"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Jewelry",
+            "value": "jewelry",
+            "children": [
+              {
+                "label": "Necklace",
+                "value": "necklace"
+              },
+              {
+                "label": "Bracelet",
+                "value": "bracelet"
+              },
+              {
+                "label": "Ring",
+                "value": "ring"
+              }
+            ]
+          },
+          {
+            "label": "Misc",
+            "value": "misc"
+          }
+        ]
+    - label: Categories
+    - checkedPathStrings:
+        array: []
+    - labelMaxWidth: ''
+    - leafPathArray:
+        array: []
+    - labelPlacedOnLeft: false
+    - expanded: '[''shoes'', ''athletic'', ''jewelry'']'
+    - selected:
+        array: []
+    - disabled: ''
+    - checkStrictly: false
+    - leafPathStrings:
+        array: []
+style:
+  ordered: []
+position2:
+  position2:
+    row: 14.8
+    height: 11.8
+    width: 6
+createdAt: 2021-06-25T20:04:21.164Z

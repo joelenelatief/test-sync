@@ -1,0 +1,37 @@
+id: multiselect1
+type: widget
+subtype: MultiSelectWidget
+template:
+  ordered:
+    - enableClientSideMatching: true
+    - values: '[1,2,3]'
+    - allowOutOfRangeValues: false
+    - enableFuzzyMatching: true
+    - searchValue: ''
+    - showFetchingIndicator: true
+    - enableCaseSensitivity: false
+    - validationMessage: ''
+    - displayValue: ''
+    - tooltipText: ''
+    - value: ''
+    - maxResults: 50
+    - placeholder: Select a value
+    - label: Numbers
+    - clearValueOnFocus: true
+    - labelMaxWidth: ''
+    - labelPlacedOnLeft: false
+    - validationState: ''
+    - onSelect: ''
+    - allowCustomValues: false
+    - disabled: ''
+    - hideClearButton: false
+    - required: false
+    - labels: ''
+style:
+  ordered: []
+position2:
+  position2:
+    row: 12.8
+    height: 1
+    width: 6
+createdAt: 2021-06-25T20:03:42.824Z

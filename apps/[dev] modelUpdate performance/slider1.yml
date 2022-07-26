@@ -1,0 +1,28 @@
+id: slider1
+type: widget
+subtype: SliderWidget2
+template:
+  ordered:
+    - hideOutput: false
+    - max: 5
+    - hidden: false
+    - step: 1
+    - validationMessage: ''
+    - tooltipText: ''
+    - labelAlign: left
+    - value: 2
+    - min: 0
+    - label: Slider
+    - _validate: false
+    - invalid: false
+    - disabled: false
+    - labelPosition: left
+    - errorMessage: ''
+style:
+  ordered: []
+position2:
+  position2:
+    row: 4.4
+    height: 1
+    width: 6
+createdAt: 2021-06-25T20:03:05.338Z
