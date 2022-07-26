@@ -1,0 +1,33 @@
+id: text5
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: >-
+        ### ModelUpdate performance test app
+
+
+        This application uses custom `@retool/performance/modelUpdate` event to
+        record time it takes to run modelUpdate for certain components.
+        Integration spec interacts with some of the components, time it takes to
+        update the model is recorded, aggregated, and assumptions are run on it.
+
+
+        Current expectation is that all v2 components can propagate model
+        updates within 16ms in viewer mode, and within 32 ms in editor mode.
+    - disableMarkdown: false
+    - overflowType: scroll
+style:
+  ordered: []
+position2:
+  position2:
+    row: 0.7999999999999998
+    height: 0.6
+    width: 12
+createdAt: 2021-06-25T20:00:36.417Z

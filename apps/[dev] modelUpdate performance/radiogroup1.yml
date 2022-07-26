@@ -1,0 +1,29 @@
+id: radiogroup1
+type: widget
+subtype: RadioGroupWidget2
+template:
+  ordered:
+    - values: '[''foo'', ''bar'', ''baz'', ''foo1'', ''bar1'', ''buzz1'']'
+    - hidden: false
+    - validationMessage: ''
+    - tooltipText: ''
+    - labelAlign: left
+    - value: foo
+    - label: Label
+    - _validate: false
+    - invalid: false
+    - disabled: false
+    - labelPosition: top
+    - disabledValues:
+        array: []
+    - errorMessage: ''
+    - required: false
+    - labels: '[''foo'', ''bar'', ''baz'', ''foo1'', ''bar1'', ''buzz1'']'
+style:
+  ordered: []
+position2:
+  position2:
+    row: 13.8
+    height: 1
+    width: 6
+createdAt: 2021-06-25T20:04:00.354Z

@@ -1,0 +1,38 @@
+id: textInputWithValidation
+type: widget
+subtype: TextInputWidget2
+template:
+  ordered:
+    - spellCheck: false
+    - iconAfter: ''
+    - autoComplete: false
+    - maxLength: null
+    - hidden: false
+    - patternType: regex
+    - textBefore: ''
+    - validationMessage: ''
+    - textAfter: ''
+    - pattern: ^foo|bar$
+    - tooltipText: ''
+    - labelAlign: left
+    - value: ''
+    - autoFill: ''
+    - placeholder: Enter value
+    - label: Enter "foo" or "bar"
+    - _validate: false
+    - invalid: false
+    - iconBefore: ''
+    - minLength: null
+    - autoCapitalize: none
+    - disabled: false
+    - labelPosition: left
+    - errorMessage: ''
+    - required: false
+style:
+  ordered: []
+position2:
+  position2:
+    row: 2.4
+    height: 1
+    width: 6
+createdAt: 2021-06-25T20:32:42.883Z
