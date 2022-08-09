@@ -1,0 +1,28 @@
+id: text2
+type: widget
+subtype: TextWidget
+template:
+  ordered:
+    - horizontalAlign: left
+    - truncateOverflow: false
+    - verticalAlign: center
+    - scrollOverflow: false
+    - tooltipText: ''
+    - value: '# Query Test Cases'
+    - style:
+        ordered: []
+    - renderAsHtml: true
+    - backgroundColor: '#0000'
+    - textColor: '#312929'
+    - renderAsMarkdown: true
+style:
+  ordered: []
+position2:
+  position2:
+    height: 1
+    width: 8
+mobilePosition2:
+  position2:
+    height: 1
+    width: 3
+createdAt: 2019-07-22T02:19:13.573Z
