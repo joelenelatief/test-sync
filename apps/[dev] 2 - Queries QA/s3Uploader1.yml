@@ -1,0 +1,29 @@
+id: s3Uploader1
+type: widget
+subtype: S3UploaderWidget
+template:
+  ordered:
+    - onUpload: ''
+    - fileExtension: ''
+    - s3FileName: ''
+    - s3ACL: private
+    - s3Resource: null
+    - s3ContentType: ''
+    - generateNames: false
+    - label: upload to S3
+    - s3BucketName: ''
+    - s3ResourceName: 8750468a-c9b2-4814-8be8-5307e684802c
+    - s3FolderName: ''
+    - disabled: ''
+    - lastUploadedFileUrl: ''
+    - lastUploadedFileName: ''
+    - s3ResourceDisplayName: t
+style:
+  ordered: []
+position2:
+  position2:
+    row: 2.6
+    col: 9
+    height: 1
+    width: 3
+createdAt: 2022-08-09T22:28:13.053Z
