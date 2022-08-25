@@ -1,0 +1,28 @@
+id: button8
+type: widget
+subtype: ButtonWidget
+template:
+  ordered:
+    - valueToCopy: ''
+    - color: '#3c92dc'
+    - internalUrlHashParams: ''
+    - exportFileType: csv
+    - buttonType: action
+    - exportTemplate: null
+    - url: ''
+    - newWindow: false
+    - value: Reset {{ table2.selectedRow.data.email}} 2FA
+    - exportQuery: ''
+    - action: reset2FA
+    - internalUrlQuery: ''
+    - internalUrlPath: ''
+    - exportFileName: ''
+    - loading: ''
+    - disabled: ''
+position2:
+  position2:
+    container: container2
+    row: 12
+    height: 1
+    width: 7
+createdAt: '2019-03-11T18:55:10.550Z'

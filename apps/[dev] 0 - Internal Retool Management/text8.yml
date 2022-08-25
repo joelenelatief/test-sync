@@ -1,0 +1,62 @@
+id: text8
+type: widget
+subtype: TextWidget
+template:
+  ordered:
+    - value: >-
+        <b>Linkedin</b>
+
+
+        <p>
+
+        <a target="_blank" href="{{getSalesforceData.data['0'].LinkedIn__c}}">
+        {{getSalesforceData.data['0'].LinkedIn__c || '--missing--'}} </a>
+
+        </p>
+
+        <br />
+
+        <b> Company </b> 
+
+        <p>
+
+        {{ getSalesforceData.data['0'].Company }}
+
+        </p>
+
+
+        <br/>
+
+
+        <b> Number of Employees </b>
+
+        <p> {{ getSalesforceData.data['0'].NumberOfEmployees }}
+          
+        </p>
+
+        <br />
+
+        <b> Annual Revenue </b>
+
+        <p> {{ getSalesforceData.data['0'].AnnualRevenue }}
+          
+        </p>
+
+
+        <br />
+
+        <b> Commercial Use </b> <span style="padding-left: 10px">{{
+        getOrganization.data.isCompanyAccount ? '✅' : '🚫'}}</span>
+          
+    - renderAsMarkdown: false
+    - renderAsHtml: true
+    - scrollOverflow: false
+    - truncateOverflow: false
+    - tooltipText: ''
+position2:
+  position2:
+    container: container3
+    row: 7
+    height: 6
+    width: 8
+createdAt: '2019-02-09T00:02:12.369Z'

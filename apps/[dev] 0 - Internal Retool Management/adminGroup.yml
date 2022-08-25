@@ -1,0 +1,58 @@
+id: adminGroup
+type: datasource
+subtype: SqlQuery
+resourceName: '[dev] internal_retool (readonly)'
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - databasePasswordOverride: ''
+    - queryDisabledMessage: ''
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: 0
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: true
+    - query: >-
+        select * from groups where name = 'admin' and "organizationId" = {{
+        table1.selectedRow.data.organizationId }}
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: 0
+    - privateParams: []
+    - triggersOnSuccess: []
+    - runWhenPageLoadsDelay: ''
+    - data: null
+    - importedQueryInputs:
+        ordered: []
+    - showSuccessConfetti: false
+    - isImported: false
+    - showSuccessToaster: true
+    - dataArray: []
+    - cacheKeyTtl: ''
+    - triggersOnFailure: []
+    - databaseNameOverride: ''
+    - confirmationMessage: null
+    - isFetching: false
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - watchedParams: []
+    - timestamp: 0
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - importedQueryInputDefaults:
+        ordered: []
+    - runWhenPageLoads: false
+    - transformer: >-
+        // type your code here
+
+        // example: return formatDataAsArray(data).filter(row => row.quantity >
+        20)
+
+        return data
+    - queryTimeout: '10000'
+    - requireConfirmation: false
+    - enableCaching: false
+    - databaseUsernameOverride: ''
+    - shouldEnableBatchQuerying: false
+    - queryThrottleTime: '750'
+createdAt: '2019-02-10T18:21:35.329Z'

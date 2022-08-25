@@ -1,0 +1,178 @@
+id: table2
+type: widget
+subtype: TableWidget
+template:
+  ordered:
+    - actionButtonQuery: ''
+    - sortMappedValue:
+        ordered: []
+    - normalizedData: null
+    - actionButtonType: runQuery
+    - columnWidths:
+        - object:
+            id: email
+            value: 319.859375
+    - actionButtonDisabled: ''
+    - columnWidthsMobile: []
+    - columnTypeSpecificExtras:
+        ordered: []
+    - onRowAdded: ''
+    - columnHeaderNames:
+        ordered: []
+    - alwaysShowPaginator: false
+    - columnColors:
+        ordered:
+          - googleToken: ''
+          - lastName: ''
+          - enabled: ''
+          - haspwd: ''
+          - isAdmin: ''
+          - profilePhotoUrl: ''
+          - hashedPassword: ''
+          - resetPasswordExpires: ''
+          - 2fa: ''
+          - sid: ''
+          - organizationId: ''
+          - updatedAt: ''
+          - resetPasswordToken: ''
+          - twoFactorAuthSecret: ''
+          - googleId: ''
+          - userName: ''
+          - id: ''
+          - createdAt: ''
+          - firstName: ''
+          - every: ''
+          - email: ''
+          - lastLoggedIn: ''
+          - twoFactorAuthEnabled: ''
+    - allowMultiRowSelect: false
+    - columnFormats:
+        ordered: []
+    - showFilterButton: true
+    - actionButtonUrl: ''
+    - actionButton: false
+    - actionButtonNewWindow: false
+    - nextBeforeCursor: ''
+    - columnVisibility:
+        ordered:
+          - googleToken: true
+          - lastName: true
+          - enabled: true
+          - haspwd: true
+          - isAdmin: true
+          - profilePhotoUrl: false
+          - hashedPassword: true
+          - resetPasswordExpires: true
+          - name: true
+          - sales: true
+          - 2fa: true
+          - sid: false
+          - organizationId: false
+          - updatedAt: true
+          - resetPasswordToken: true
+          - twoFactorAuthSecret: true
+          - googleId: true
+          - userName: true
+          - id: false
+          - createdAt: true
+          - firstName: true
+          - every: true
+          - email: true
+          - lastLoggedIn: true
+          - twoFactorAuthEnabled: true
+    - selectedPageIndex: '0'
+    - actionButtonColumnName: Actions
+    - filterStackType: and
+    - downloadRawData: true
+    - showFetchingIndicator: true
+    - serverPaginated: false
+    - data: '{{  getOrgUsers.data  }}'
+    - displayedData: null
+    - actionButtons: []
+    - actionButtonSelectsRow: false
+    - selectRowByDefault: true
+    - defaultSortByColumn: ''
+    - paginationOffset: 0
+    - sortedDesc: false
+    - columnMappersRenderAsHTML:
+        ordered: []
+    - actionButtonInternalUrlPath: ''
+    - pageSize: 9
+    - useDynamicColumnSettings: false
+    - selectedColumn: null
+    - actionButtonPosition: right
+    - bulkUpdateAction: ''
+    - afterCursor: ''
+    - changeSet:
+        object: {}
+    - sortedColumn: ''
+    - actionButtonText: ''
+    - columnAllowOverflow:
+        ordered: []
+    - beforeCursor: ''
+    - serverPaginationType: limitOffsetBased
+    - onRowSelect: ''
+    - showDownloadButton: true
+    - selectedIndex: ''
+    - defaultSortDescending: false
+    - dynamicColumnSettings: null
+    - totalRowCount: ''
+    - recordUpdates:
+        ordered:
+          - array: []
+    - newRow: null
+    - columnEditable:
+        ordered: []
+    - filters:
+        ordered:
+          - array: []
+    - displayedDataIndices: null
+    - columnMappers:
+        ordered: []
+    - showClearSelection: false
+    - selectedCell:
+        object:
+          index: null
+          data: null
+          columnName: null
+    - columns:
+        - id
+        - email
+        - firstName
+        - lastName
+        - profilePhotoUrl
+        - googleId
+        - googleToken
+        - hashedPassword
+        - organizationId
+        - createdAt
+        - updatedAt
+        - lastLoggedIn
+        - enabled
+        - resetPasswordToken
+        - resetPasswordExpires
+        - sid
+        - userName
+        - twoFactorAuthSecret
+        - twoFactorAuthEnabled
+        - every
+        - isAdmin
+        - 2fa
+        - haspwd
+    - sort: null
+    - actionButtonInternalUrlQuery: ''
+    - calculatedColumns: []
+    - selectedRow:
+        object:
+          index: null
+          data: null
+    - showPaginationOnTop: false
+    - nextAfterCursor: ''
+    - useCompactMode: false
+position2:
+  position2:
+    container: container2
+    row: 1
+    height: 11
+    width: 12
+createdAt: '2019-02-08T12:08:06.056Z'

@@ -1,0 +1,17 @@
+id: text4
+type: widget
+subtype: TextWidget
+template:
+  ordered:
+    - value: '##### Intercom Profile'
+    - renderAsMarkdown: true
+    - renderAsHtml: true
+    - scrollOverflow: false
+    - truncateOverflow: false
+    - tooltipText: ''
+position2:
+  position2:
+    container: container3
+    height: 1
+    width: 12
+createdAt: '2019-02-08T13:16:45.996Z'

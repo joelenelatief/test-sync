@@ -1,0 +1,21 @@
+id: text2
+type: widget
+subtype: TextWidget
+template:
+  ordered:
+    - value: >-
+        ##### {{  getOrganization.data.trialExpiryDate[0] != null ? 'Trial
+        Expiring ' + moment(getOrganization.data.trialExpiryDate[0]).fromNow() :
+        'On a Plan (' + (getOrganization.data.planName[0]   || 'Legacy /
+        Enterprise') + ')' }}
+    - renderAsMarkdown: true
+    - renderAsHtml: true
+    - scrollOverflow: false
+    - truncateOverflow: false
+    - tooltipText: ''
+position2:
+  position2:
+    container: container1
+    height: 1
+    width: 12
+createdAt: '2019-02-08T11:58:25.185Z'

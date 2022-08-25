@@ -1,0 +1,49 @@
+id: text6
+type: widget
+subtype: TextWidget
+template:
+  ordered:
+    - value: >-
+        <b>Location</b>
+
+
+        <p>
+
+        {{ getIntercomData.data.location_data.city_name}}, {{
+        getIntercomData.data.location_data.country_name}}
+
+        </p>
+
+        <br />
+
+        <b> Current Time </b> 
+
+        <p>
+
+        {{
+        moment.tz(getIntercomData.data.location_data.timezone).format('lll')}}
+
+        </p>
+
+        <p><i> {{ getIntercomData.data.location_data.timezone}}</i></p>
+
+
+        <br/>
+
+
+        <b> Last Seen </b>
+
+        <p> {{ moment(getIntercomData.data.last_request_at *
+        1000).format('lll')}}
+    - renderAsMarkdown: false
+    - renderAsHtml: true
+    - scrollOverflow: false
+    - truncateOverflow: false
+    - tooltipText: ''
+position2:
+  position2:
+    container: container3
+    row: 1
+    height: 5
+    width: 8
+createdAt: '2019-02-08T13:52:33.129Z'

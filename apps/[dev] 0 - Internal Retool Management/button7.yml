@@ -1,0 +1,29 @@
+id: button7
+type: widget
+subtype: ButtonWidget
+template:
+  ordered:
+    - valueToCopy: ''
+    - color: '#3c92dc'
+    - internalUrlHashParams: ''
+    - exportFileType: csv
+    - buttonType: action
+    - exportTemplate: null
+    - url: ''
+    - newWindow: false
+    - value: Restart Trial
+    - exportQuery: ''
+    - action: restartTrial
+    - internalUrlQuery: ''
+    - internalUrlPath: ''
+    - exportFileName: ''
+    - loading: ''
+    - disabled: ''
+position2:
+  position2:
+    container: container1
+    row: 7
+    col: 6
+    height: 1
+    width: 6
+createdAt: '2019-02-21T20:01:48.939Z'

@@ -1,0 +1,24 @@
+id: radiogroup1
+type: widget
+subtype: RadioGroupWidget
+template:
+  ordered:
+    - values: '[0, 4,7,14, 28]'
+    - docsSlug: radiogroup
+    - tooltipText: ''
+    - value: '4'
+    - label: New Trial End Date
+    - labelMaxWidth: ''
+    - labelPlacedOnLeft: ''
+    - onChangeQuery: ''
+    - disabled: '{{  _.get(getOrganization, ''data.trialExpiryDate[0]'') == null  }}'
+    - labels: >-
+        ['Now', '4 days from now', '1 week from now', '2 weeks from now', '4
+        weeks from now']
+position2:
+  position2:
+    container: container1
+    row: 1
+    height: 5
+    width: 12
+createdAt: '2019-02-08T12:03:07.392Z'

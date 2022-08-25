@@ -1,0 +1,143 @@
+id: table3
+type: widget
+subtype: TableWidget
+template:
+  ordered:
+    - actionButtonQuery: ''
+    - sortMappedValue:
+        ordered: []
+    - normalizedData: null
+    - actionButtonType: runQuery
+    - columnWidths:
+        - object:
+            id: id
+            value: 65.328125
+        - object:
+            id: name
+            value: 179.828125
+    - actionButtonDisabled: ''
+    - columnWidthsMobile: []
+    - columnTypeSpecificExtras:
+        ordered: []
+    - onRowAdded: ''
+    - columnHeaderNames:
+        ordered: []
+    - alwaysShowPaginator: false
+    - columnColors:
+        ordered:
+          - folderId: ''
+          - name: ''
+          - organizationId: ''
+          - updatedAt: ''
+          - saves: ''
+          - releasedTagId: ''
+          - id: ''
+          - createdAt: ''
+          - uuid: ''
+          - last_saved: ''
+    - allowMultiRowSelect: false
+    - columnFormats:
+        ordered:
+          - last_saved: datetime
+    - showFilterButton: true
+    - actionButtonUrl: ''
+    - actionButton: false
+    - actionButtonNewWindow: false
+    - nextBeforeCursor: ''
+    - columnVisibility:
+        ordered:
+          - folderId: true
+          - name: true
+          - sales: true
+          - organizationId: true
+          - updatedAt: true
+          - saves: true
+          - releasedTagId: true
+          - id: true
+          - createdAt: true
+          - uuid: true
+          - email: true
+          - last_saved: true
+    - selectedPageIndex: '0'
+    - actionButtonColumnName: Actions
+    - filterStackType: and
+    - downloadRawData: true
+    - showFetchingIndicator: true
+    - serverPaginated: false
+    - data: '{{ getApps.data }}'
+    - displayedData: null
+    - actionButtons: []
+    - actionButtonSelectsRow: false
+    - selectRowByDefault: true
+    - defaultSortByColumn: ''
+    - paginationOffset: 0
+    - sortedDesc: false
+    - columnMappersRenderAsHTML:
+        ordered: []
+    - actionButtonInternalUrlPath: ''
+    - pageSize: 11
+    - useDynamicColumnSettings: false
+    - selectedColumn: null
+    - actionButtonPosition: right
+    - bulkUpdateAction: ''
+    - afterCursor: ''
+    - changeSet:
+        object: {}
+    - sortedColumn: ''
+    - actionButtonText: ''
+    - columnAllowOverflow:
+        ordered: []
+    - beforeCursor: ''
+    - serverPaginationType: limitOffsetBased
+    - onRowSelect: ''
+    - showDownloadButton: true
+    - selectedIndex: ''
+    - defaultSortDescending: false
+    - dynamicColumnSettings: null
+    - totalRowCount: ''
+    - recordUpdates:
+        ordered:
+          - array: []
+    - newRow: null
+    - columnEditable:
+        ordered: []
+    - filters:
+        ordered:
+          - array: []
+    - displayedDataIndices: null
+    - columnMappers:
+        ordered: []
+    - showClearSelection: false
+    - selectedCell:
+        object:
+          index: null
+          data: null
+          columnName: null
+    - columns:
+        - id
+        - name
+        - createdAt
+        - updatedAt
+        - organizationId
+        - folderId
+        - uuid
+        - releasedTagId
+        - saves
+        - last_saved
+    - sort: null
+    - actionButtonInternalUrlQuery: ''
+    - calculatedColumns: []
+    - selectedRow:
+        object:
+          index: null
+          data: null
+    - showPaginationOnTop: false
+    - nextAfterCursor: ''
+    - useCompactMode: true
+position2:
+  position2:
+    container: container2
+    row: 15
+    height: 8
+    width: 6
+createdAt: '2019-02-09T01:04:14.642Z'
