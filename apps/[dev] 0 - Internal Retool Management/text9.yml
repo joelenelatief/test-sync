@@ -1,0 +1,47 @@
+id: text9
+type: widget
+subtype: TextWidget
+template:
+  ordered:
+    - value: >-
+        <a
+        href="https://www.google.com/search?q={{table1.selectedRow.data.name}}
+        {{ getSalesforceData.data['0'].Company}}" target="_blank"> Google Me
+        </a>
+
+
+        <br /><br />
+
+
+        <a href="https://www.google.com/search?q=crunchbase {{
+        getSalesforceData.data['0'].Company}} " target="_blank"> Google
+        Crunchbase </a>
+
+
+        <br /><br />
+
+
+        <a href="https://na49.lightning.force.com/lightning/r/Lead/{{
+        getSalesforceData.data['0'].Id}}/view" target="_blank"> Open In
+        Salesforce </a>
+
+
+        <br/> <br/>
+
+
+        <a
+        href=https://app.fullstory.com/ui/4ZFX6/segments/everyone/people:search:((NOW%2FDAY-29DAY:NOW%2FDAY%2B1DAY):((UserEmail:%5E$:%22{{encodeURIComponent(table1.selectedRow.data.email)}}%22)):():():():)/0"
+        target="_blank"> Open in Fullstory </a>
+    - renderAsMarkdown: false
+    - renderAsHtml: true
+    - scrollOverflow: false
+    - truncateOverflow: false
+    - tooltipText: ''
+position2:
+  position2:
+    container: container3
+    row: 7
+    col: 8
+    height: 5
+    width: 4
+createdAt: '2019-02-09T00:05:35.701Z'

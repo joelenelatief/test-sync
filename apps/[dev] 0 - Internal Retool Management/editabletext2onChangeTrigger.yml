@@ -1,0 +1,63 @@
+id: editabletext2onChangeTrigger
+type: datasource
+subtype: RetoolTableQuery
+resourceName: '[dev] internal_retool (write)'
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - records: ''
+    - databasePasswordOverride: ''
+    - queryDisabledMessage: ''
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: 0
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: false
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: 0
+    - privateParams: []
+    - triggersOnSuccess:
+        - getOrgUsers
+    - runWhenPageLoadsDelay: ''
+    - data: null
+    - recordId: ''
+    - importedQueryInputs:
+        ordered: []
+    - showSuccessConfetti: false
+    - isImported: false
+    - showSuccessToaster: true
+    - cacheKeyTtl: ''
+    - filterBy: '[{"key":"id","value":"{{ table2.selectedRow.data.id}}","operation":"="}]'
+    - actionType: UPDATE_BY
+    - triggersOnFailure: []
+    - databaseNameOverride: ''
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: '[{"key":"email","value":"{{ editabletext2.value}}"}]'
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - watchedParams: []
+    - enableBulkUpdates: false
+    - timestamp: 0
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - importedQueryInputDefaults:
+        ordered: []
+    - bulkUpdatePrimaryKey: ''
+    - runWhenPageLoads: false
+    - transformer: >-
+        // type your code here
+
+        // example: return formatDataAsArray(data).filter(row => row.quantity >
+        20)
+
+        return data
+    - tableName: users
+    - queryTimeout: '10000'
+    - requireConfirmation: false
+    - enableCaching: false
+    - databaseUsernameOverride: ''
+    - doNotThrowOnNoOp: false
+    - queryThrottleTime: '750'
+createdAt: '2019-03-14T18:32:33.421Z'

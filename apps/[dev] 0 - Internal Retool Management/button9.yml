@@ -1,0 +1,31 @@
+id: button9
+type: widget
+subtype: ButtonWidget
+template:
+  ordered:
+    - valueToCopy: ''
+    - color: '{{ table2.selectedRow.data.enabled ? ''#eb144c'' : ''green'' }}'
+    - internalUrlHashParams: ''
+    - exportFileType: csv
+    - buttonType: action
+    - exportTemplate: null
+    - url: ''
+    - newWindow: false
+    - value: >-
+        {{ table2.selectedRow.data.enabled ? 'Deactivate User' : 'Activate User'
+        }}
+    - exportQuery: ''
+    - action: toggleUserEnabled
+    - internalUrlQuery: ''
+    - internalUrlPath: ''
+    - exportFileName: ''
+    - loading: ''
+    - disabled: ''
+position2:
+  position2:
+    container: container2
+    row: 13
+    col: 7
+    height: 1
+    width: 5
+createdAt: '2019-03-14T08:06:57.351Z'

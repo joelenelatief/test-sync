@@ -1,0 +1,120 @@
+id: table5
+type: widget
+subtype: TableWidget
+template:
+  ordered:
+    - actionButtonQuery: ''
+    - sortMappedValue:
+        ordered: []
+    - normalizedData: null
+    - actionButtonType: runQuery
+    - columnWidths: []
+    - actionButtonDisabled: ''
+    - columnWidthsMobile: []
+    - columnTypeSpecificExtras:
+        ordered: []
+    - onRowAdded: ''
+    - columnHeaderNames:
+        ordered: []
+    - alwaysShowPaginator: false
+    - columnColors:
+        ordered:
+          - id: ''
+          - name: ''
+          - type: ''
+          - email: ''
+          - sales: ''
+    - allowMultiRowSelect: false
+    - columnFormats:
+        ordered: []
+    - showFilterButton: true
+    - actionButtonUrl: ''
+    - actionButton: false
+    - actionButtonNewWindow: false
+    - nextBeforeCursor: ''
+    - columnVisibility:
+        ordered:
+          - id: true
+          - name: true
+          - type: true
+          - email: true
+          - sales: true
+    - selectedPageIndex: '0'
+    - actionButtonColumnName: Actions
+    - filterStackType: and
+    - downloadRawData: true
+    - showFetchingIndicator: true
+    - serverPaginated: false
+    - data: '{{  getResources.data }}'
+    - displayedData: null
+    - actionButtons: []
+    - actionButtonSelectsRow: false
+    - selectRowByDefault: true
+    - defaultSortByColumn: ''
+    - paginationOffset: 0
+    - sortedDesc: false
+    - columnMappersRenderAsHTML:
+        ordered: []
+    - actionButtonInternalUrlPath: ''
+    - pageSize: 11
+    - useDynamicColumnSettings: false
+    - selectedColumn: null
+    - actionButtonPosition: right
+    - bulkUpdateAction: ''
+    - afterCursor: ''
+    - changeSet:
+        object: {}
+    - sortedColumn: ''
+    - actionButtonText: ''
+    - columnAllowOverflow:
+        ordered: []
+    - beforeCursor: ''
+    - serverPaginationType: limitOffsetBased
+    - onRowSelect: ''
+    - showDownloadButton: true
+    - selectedIndex: ''
+    - defaultSortDescending: false
+    - dynamicColumnSettings: null
+    - totalRowCount: ''
+    - recordUpdates:
+        ordered:
+          - array: []
+    - newRow: null
+    - columnEditable:
+        ordered: []
+    - filters:
+        ordered:
+          - array: []
+    - displayedDataIndices: null
+    - columnMappers:
+        ordered: []
+    - showClearSelection: false
+    - selectedCell:
+        object:
+          index: null
+          data: null
+          columnName: null
+    - columns:
+        - id
+        - name
+        - email
+        - sales
+        - type
+    - sort: null
+    - actionButtonInternalUrlQuery: ''
+    - calculatedColumns: []
+    - selectedRow:
+        object:
+          index: null
+          data: null
+    - showPaginationOnTop: false
+    - nextAfterCursor: ''
+    - useCompactMode: true
+position2:
+  position2:
+    container: container2
+    row: 15
+    col: 6
+    height: 8
+    width: 6
+createdAt: '2019-03-27T23:33:25.011Z'

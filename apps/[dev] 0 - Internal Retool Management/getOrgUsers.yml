@@ -1,0 +1,85 @@
+id: getOrgUsers
+type: datasource
+subtype: SqlQuery
+resourceName: '[dev] internal_retool (readonly)'
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - databasePasswordOverride: ''
+    - queryDisabledMessage: ''
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: 0
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: true
+    - query: |-
+        select
+          users.id,
+          MAX(users.sid) as sid,
+          MAX(users.email) as email,
+          MAX("firstName") as "firstName",
+          MAX("lastName") as "lastName",
+          MAX("profilePhotoUrl") as "profilePhotoUrl",
+          MAX(users."organizationId") as "organizationId",
+          EVERY(users.enabled) as enabled,
+          EVERY("twoFactorAuthEnabled") as "2fa",
+          BOOL_OR(admin_groups.name IS NOT NULL) as "isAdmin",
+          users."hashedPassword" IS NOT NULL as haspwd
+        from
+          users
+          left join user_groups on users.id = user_groups."userId"
+          left join (
+            select
+              *
+            from
+              groups
+            where
+              name = 'admin'
+          ) admin_groups on user_groups."groupId" = admin_groups.id
+        where
+          users."organizationId" = {{ table1.selectedRow.data.organizationId }}
+          and users.email ilike {{ '%' + textinput2.value + '%' }}
+        group by
+          users.id
+        order by enabled desc
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: 0
+    - privateParams: []
+    - triggersOnSuccess: []
+    - runWhenPageLoadsDelay: ''
+    - data: null
+    - importedQueryInputs:
+        ordered: []
+    - showSuccessConfetti: false
+    - isImported: false
+    - showSuccessToaster: true
+    - dataArray: []
+    - cacheKeyTtl: ''
+    - triggersOnFailure: []
+    - databaseNameOverride: ''
+    - confirmationMessage: null
+    - isFetching: false
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - watchedParams: []
+    - timestamp: 0
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - importedQueryInputDefaults:
+        ordered: []
+    - runWhenPageLoads: false
+    - transformer: >-
+        // type your code here
+
+        // example: return formatDataAsArray(data).filter(row => row.quantity >
+        20)
+
+        return data
+    - queryTimeout: '10000'
+    - requireConfirmation: false
+    - enableCaching: false
+    - databaseUsernameOverride: ''
+    - shouldEnableBatchQuerying: false
+    - queryThrottleTime: '750'
+createdAt: '2019-02-08T12:07:46.611Z'

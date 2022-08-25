@@ -1,0 +1,13 @@
+version: 43.0.9
+pageUuid: c37676ba-116f-11ea-b17d-d7734e1526f2
+appTemplate:
+  urlFragmentDefinitions:
+    - ordered:
+        - name: search
+        - value: '{{ textinput1.value}}'
+  pageLoadValueOverrides:
+    - ordered:
+        - name: textinput1.value
+        - value: '{{ urlparams.hash.search}}'
+  rootScreen: null
+  version: 2.54.21

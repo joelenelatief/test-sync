@@ -1,0 +1,184 @@
+id: table1
+type: widget
+subtype: TableWidget
+template:
+  ordered:
+    - actionButtonQuery: ''
+    - sortMappedValue:
+        ordered: []
+    - normalizedData: null
+    - actionButtonType: runQuery
+    - columnWidths:
+        - object:
+            id: sid
+            value: 102.671875
+        - object:
+            id: id
+            value: 79.015625
+        - object:
+            id: email
+            value: 242.4375
+    - actionButtonDisabled: ''
+    - columnWidthsMobile: []
+    - columnTypeSpecificExtras:
+        ordered: []
+    - onRowAdded: ''
+    - columnHeaderNames:
+        ordered: []
+    - alwaysShowPaginator: false
+    - columnColors:
+        ordered:
+          - googleToken: ''
+          - lastName: ''
+          - enabled: ''
+          - planId: ''
+          - subdomain: ''
+          - stripeCustomerId: ''
+          - profilePhotoUrl: ''
+          - hashedPassword: ''
+          - resetPasswordExpires: ''
+          - name: ''
+          - sid: ''
+          - organizationId: ''
+          - updatedAt: ''
+          - resetPasswordToken: ''
+          - twoFactorAuthSecret: ''
+          - googleId: ''
+          - userName: ''
+          - id: ''
+          - createdAt: ''
+          - firstName: ''
+          - email: ''
+          - lastLoggedIn: ''
+          - twoFactorAuthEnabled: ''
+    - allowMultiRowSelect: false
+    - columnFormats:
+        ordered:
+          - createdAt: datetime
+    - showFilterButton: true
+    - actionButtonUrl: ''
+    - actionButton: false
+    - actionButtonNewWindow: false
+    - nextBeforeCursor: ''
+    - columnVisibility:
+        ordered:
+          - googleToken: false
+          - lastName: false
+          - enabled: true
+          - planId: true
+          - subdomain: true
+          - stripeCustomerId: true
+          - profilePhotoUrl: false
+          - hashedPassword: true
+          - resetPasswordExpires: true
+          - name: true
+          - sales: true
+          - sid: true
+          - organizationId: true
+          - updatedAt: true
+          - resetPasswordToken: true
+          - twoFactorAuthSecret: true
+          - googleId: false
+          - userName: true
+          - id: true
+          - createdAt: true
+          - firstName: false
+          - email: true
+          - lastLoggedIn: true
+          - twoFactorAuthEnabled: true
+    - selectedPageIndex: '0'
+    - actionButtonColumnName: Actions
+    - filterStackType: and
+    - downloadRawData: true
+    - showFetchingIndicator: true
+    - serverPaginated: false
+    - data: '{{  searchForUsers.data  }}'
+    - displayedData: null
+    - actionButtons: []
+    - actionButtonSelectsRow: false
+    - selectRowByDefault: true
+    - defaultSortByColumn: ''
+    - paginationOffset: 0
+    - sortedDesc: false
+    - columnMappersRenderAsHTML:
+        ordered: []
+    - actionButtonInternalUrlPath: ''
+    - pageSize: 11
+    - useDynamicColumnSettings: false
+    - selectedColumn: null
+    - actionButtonPosition: right
+    - bulkUpdateAction: ''
+    - afterCursor: ''
+    - changeSet:
+        object: {}
+    - sortedColumn: ''
+    - actionButtonText: ''
+    - columnAllowOverflow:
+        ordered: []
+    - beforeCursor: ''
+    - serverPaginationType: limitOffsetBased
+    - onRowSelect: ''
+    - showDownloadButton: true
+    - selectedIndex: ''
+    - defaultSortDescending: false
+    - dynamicColumnSettings: null
+    - totalRowCount: ''
+    - recordUpdates:
+        ordered:
+          - array: []
+    - newRow: null
+    - columnEditable:
+        ordered: []
+    - filters:
+        ordered:
+          - array: []
+    - displayedDataIndices: null
+    - columnMappers:
+        ordered:
+          - Calculated Column 1: '{{currentRow.enabled}}'
+    - showClearSelection: false
+    - selectedCell:
+        object:
+          index: null
+          data: null
+          columnName: null
+    - columns:
+        - id
+        - sid
+        - email
+        - firstName
+        - lastName
+        - profilePhotoUrl
+        - organizationId
+        - name
+        - googleId
+        - googleToken
+        - hashedPassword
+        - createdAt
+        - updatedAt
+        - lastLoggedIn
+        - enabled
+        - resetPasswordToken
+        - resetPasswordExpires
+        - userName
+        - twoFactorAuthSecret
+        - twoFactorAuthEnabled
+        - subdomain
+        - planId
+        - stripeCustomerId
+    - sort: null
+    - actionButtonInternalUrlQuery: ''
+    - calculatedColumns: []
+    - selectedRow:
+        object:
+          index: null
+          data: null
+    - showPaginationOnTop: false
+    - nextAfterCursor: ''
+    - useCompactMode: true
+position2:
+  position2:
+    row: 2
+    height: 8
+    width: 12
+createdAt: '2019-02-08T11:51:47.942Z'
