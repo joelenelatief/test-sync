@@ -1,0 +1,88 @@
+id: query9
+type: datasource
+subtype: DynamoQuery
+resourceName: 8777e3a1-56cf-4543-b349-c06a0cb8150c
+resourceDisplayName: '[dev] dynamodb'
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - UpdateExpression: ''
+    - method: query
+    - lastReceivedFromResourceAt: null
+    - queryDisabledMessage: ''
+    - successMessage: ''
+    - ExpressionAttributeNames: '{}'
+    - queryDisabled: ''
+    - playgroundQuerySaveId: latest
+    - resourceNameOverride: ''
+    - ExpressionAttributeValues: '{}'
+    - runWhenModelUpdates: true
+    - autoPaginate: true
+    - showFailureToaster: true
+    - ProjectionExpression: ''
+    - query: ''
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - error: null
+    - privateParams: []
+    - runWhenPageLoadsDelay: ''
+    - data: null
+    - importedQueryInputs:
+        ordered: []
+    - isImported: false
+    - table: ''
+    - showSuccessToaster: true
+    - cacheKeyTtl: ''
+    - metadata: null
+    - FilterExpression: ''
+    - changesetObject: ''
+    - errorTransformer: >-
+        // The variable 'data' allows you to reference the request's data in the
+        transformer. 
+
+        // example: return data.find(element => element.isError)
+
+        return data.error
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - ConditionExpression: ''
+    - Item: '{}'
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: ''
+    - watchedParams: []
+    - KeyConditionExpression: ''
+    - enableErrorTransformer: false
+    - showLatestVersionUpdatedWarning: false
+    - timestamp: 0
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - isTableFieldRawInput: false
+    - runWhenPageLoads: false
+    - transformer: >-
+        // type your code here
+
+        // example: return formatDataAsArray(data).filter(row => row.quantity >
+        20)
+
+        return data
+    - events: []
+    - queryTimeout: '10000'
+    - requireConfirmation: false
+    - queryFailureConditions: ''
+    - customParameters: '{}'
+    - changesetIsObject: false
+    - Limit: ''
+    - enableCaching: false
+    - Select: ''
+    - allowedGroups: []
+    - IndexName: ''
+    - usingCustomParameters: false
+    - queryThrottleTime: '750'
+    - Key: '{}'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2022-09-07T21:46:54.548Z
