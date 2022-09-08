@@ -1,0 +1,10 @@
+id: $main
+type: frame
+subtype: Frame
+template:
+  ordered:
+    - type: main
+    - sticky: false
+style:
+  ordered: []
+createdAt: 2022-08-10T21:18:07.399Z

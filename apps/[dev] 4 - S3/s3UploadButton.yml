@@ -1,0 +1,42 @@
+id: s3UploadButton
+type: widget
+subtype: S3UploaderWidget
+template:
+  ordered:
+    - onUpload: allFiles
+    - fileExtension: ''
+    - s3FileName: '{{ customFilenameInput.value }}'
+    - s3ACL: private
+    - s3Resource: null
+    - style:
+        ordered: []
+    - s3ContentType: ''
+    - generateNames: false
+    - label: Select File
+    - s3BucketName: ''
+    - events:
+        - ordered:
+            - event: upload
+            - type: datasource
+            - method: trigger
+            - pluginId: allFiles
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - s3ResourceName: '[demo] s3'
+    - s3FolderName: ''
+    - disabled: ''
+    - lastUploadedFileUrl: ''
+    - lastUploadedFileName: ''
+style:
+  ordered: []
+position2:
+  position2:
+    container: uploadFileContainer
+    row: 1
+    col: 8
+    height: 1
+    width: 4
+createdAt: 2019-01-24T15:01:35.437Z

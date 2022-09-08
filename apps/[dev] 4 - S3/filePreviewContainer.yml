@@ -1,0 +1,26 @@
+id: filePreviewContainer
+type: widget
+subtype: TabbedContainerWidget
+template:
+  ordered:
+    - heightType: fixed
+    - spinWhenChildrenAreFetching: true
+    - unmountInactiveTabs: false
+    - style:
+        ordered: []
+    - tabNames: '[''json'', ''image'', ''text'', ''invalid'', ''table'']'
+    - selectedTabIndex: 0
+    - selectedTab: '{{ filePreviewContainer.tabNames.indexOf(fileType.value) }}'
+    - showTabBar: false
+    - disableAnimation: false
+    - overflowType: hidden
+    - disabled: ''
+style:
+  ordered: []
+position2:
+  position2:
+    container: fileContainer
+    row: 1
+    height: 11
+    width: 12
+createdAt: 2019-01-24T12:34:25.926Z
