@@ -1,0 +1,27 @@
+id: fileType
+type: function
+subtype: Function
+template:
+  ordered:
+    - funcBody: |-
+        const type = {{ filePreview.data.ContentType }}
+
+        if (type == "text/csv") {
+          return "table";
+        }
+
+        if (type.startsWith("text/")) {
+          return "text";
+        }
+
+        if (type.startsWith("image/")) {
+          return "image";
+        }
+
+        if (type == "application/json") {
+          return "json";
+        }
+
+        return 'invalid'
+    - value: ''
+createdAt: 2019-01-24T12:41:10.640Z
