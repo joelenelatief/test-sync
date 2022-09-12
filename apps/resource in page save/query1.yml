@@ -1,11 +1,12 @@
 id: query1
 type: datasource
-subtype: SqlQuery
-resourceName: bae176ec-7f67-4940-b206-a24d60fbe2ce
-resourceDisplayName: '[sample] postgres'
+subtype: SqlQueryUnified
+resourceName: dc80d277-4052-4f00-acf7-507cd5f05d91
+resourceDisplayName: Internal Postgres Resource
 template:
   ordered:
     - queryRefreshTime: ''
+    - records: ''
     - lastReceivedFromResourceAt: null
     - databasePasswordOverride: ''
     - queryDisabledMessage: ''
@@ -22,14 +23,18 @@ template:
     - privateParams: []
     - runWhenPageLoadsDelay: ''
     - data: null
+    - recordId: ''
     - importedQueryInputs:
         ordered: []
     - isImported: false
     - showSuccessToaster: true
     - dataArray: []
     - cacheKeyTtl: ''
+    - filterBy: ''
     - databaseHostOverride: ''
     - metadata: null
+    - editorMode: sql
+    - actionType: ''
     - changesetObject: ''
     - shouldUseLegacySql: false
     - errorTransformer: >-
@@ -48,12 +53,14 @@ template:
     - resourceTypeOverride: ''
     - watchedParams: []
     - enableErrorTransformer: false
+    - enableBulkUpdates: false
     - showLatestVersionUpdatedWarning: false
     - timestamp: 0
     - importedQueryDefaults:
         ordered: []
     - enableTransformer: false
     - showUpdateSetValueDynamicallyToggle: true
+    - bulkUpdatePrimaryKey: ''
     - runWhenPageLoads: false
     - transformer: >-
         // type your code here
@@ -63,6 +70,7 @@ template:
 
         return data
     - events: []
+    - tableName: ''
     - queryTimeout: '10000'
     - requireConfirmation: false
     - queryFailureConditions: ''
@@ -71,6 +79,7 @@ template:
     - allowedGroups: []
     - databaseUsernameOverride: ''
     - shouldEnableBatchQuerying: false
+    - doNotThrowOnNoOp: false
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
