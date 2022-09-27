@@ -1,0 +1,304 @@
+id: table1
+type: widget
+subtype: TableWidget
+template:
+  ordered:
+    - showCustomButton: false
+    - sortMappedValue:
+        ordered: []
+    - _filteredSortedRenderedDataWithTypes: null
+    - heightType: fixed
+    - normalizedData: null
+    - rowHeight: standard
+    - saveChangesDisabled: ''
+    - columnTypeProperties:
+        ordered: []
+    - columnWidths: []
+    - showSummaryFooter: false
+    - disableRowSelectInteraction: false
+    - columnWidthsMobile: []
+    - hasNextAfterCursor: ''
+    - columnTypeSpecificExtras:
+        ordered: []
+    - onRowAdded: ''
+    - columnHeaderNames:
+        ordered: []
+    - alwaysShowPaginator: false
+    - columnColors:
+        ordered:
+          - backend_response_code: ''
+          - sent_bytes: ''
+          - request_timestamp: ''
+          - elb_response_code: ''
+          - folderId: ''
+          - request_processing_time: ''
+          - name: ''
+          - ssl_protocol: ''
+          - sales: ''
+          - deletedAt: ''
+          - backend_port: ''
+          - received_bytes: ''
+          - backend_processing_time: ''
+          - organizationId: ''
+          - updatedAt: ''
+          - protected: ''
+          - request_verb: ''
+          - url: ''
+          - elb_name: ''
+          - request_port: ''
+          - user_agent: ''
+          - isGlobalWidget: ''
+          - backend_ip: ''
+          - isMobileApp: ''
+          - lastEditedBy: ''
+          - clonedFromTemplateName: ''
+          - request_ip: ''
+          - client_response_time: ''
+          - protocol: ''
+          - releasedTagId: ''
+          - synced: ''
+          - id: ''
+          - createdAt: ''
+          - uuid: ''
+          - email: ''
+          - description: ''
+          - photoUrl: ''
+          - ssl_cipher: ''
+    - columnFrozenAlignments:
+        ordered: []
+    - allowMultiRowSelect: false
+    - columnFormats:
+        ordered: []
+    - columnRestrictedEditing:
+        ordered: []
+    - showFilterButton: true
+    - _columnVisibility:
+        ordered:
+          - backend_response_code: true
+          - sent_bytes: true
+          - request_timestamp: true
+          - elb_response_code: true
+          - request_processing_time: true
+          - name: true
+          - ssl_protocol: true
+          - Sales: true
+          - sales: true
+          - backend_port: true
+          - received_bytes: true
+          - backend_processing_time: true
+          - request_verb: true
+          - url: true
+          - elb_name: true
+          - request_port: true
+          - user_agent: true
+          - backend_ip: true
+          - request_ip: true
+          - client_response_time: true
+          - Title: true
+          - protocol: true
+          - id: true
+          - email: true
+          - Description: true
+          - ssl_cipher: true
+    - _columnSummaryTypes:
+        ordered: []
+    - _columnsWithLegacyBackgroundColor:
+        set: []
+    - showAddRowButton: false
+    - _unfilteredSelectedIndex: ''
+    - nextBeforeCursor: ''
+    - columnVisibility:
+        ordered:
+          - backend_response_code: true
+          - sent_bytes: true
+          - request_timestamp: true
+          - elb_response_code: true
+          - request_processing_time: true
+          - name: true
+          - ssl_protocol: true
+          - Sales: true
+          - sales: true
+          - backend_port: true
+          - received_bytes: true
+          - backend_processing_time: true
+          - request_verb: true
+          - url: true
+          - elb_name: true
+          - request_port: true
+          - user_agent: true
+          - backend_ip: true
+          - request_ip: true
+          - client_response_time: true
+          - Title: true
+          - protocol: true
+          - id: true
+          - email: true
+          - Description: true
+          - ssl_cipher: true
+    - selectedPageIndex: '0'
+    - applyDynamicSettingsToColumnOrder: false
+    - rowColor:
+        array: []
+    - actionButtonColumnName: Actions
+    - resetAfterSave: true
+    - filterStackType: and
+    - downloadRawData: true
+    - showFetchingIndicator: true
+    - serverPaginated: false
+    - data: '{{ query1.data}}'
+    - displayedData: null
+    - actionButtons: []
+    - actionButtonSelectsRow: true
+    - selectRowByDefault: true
+    - defaultSortByColumn: ''
+    - paginationOffset: 0
+    - columnAlignment:
+        ordered: []
+    - columnSummaries:
+        object: {}
+    - showBoxShadow: true
+    - sortedDesc: false
+    - customButtonName: ''
+    - columnMappersRenderAsHTML:
+        ordered: []
+    - showRefreshButton: true
+    - pageSize: 6
+    - useDynamicColumnSettings: false
+    - style:
+        ordered: []
+    - actionButtonPosition: left
+    - dynamicRowHeights: false
+    - bulkUpdateAction: ''
+    - afterCursor: ''
+    - onCustomButtonPressQueryName: ''
+    - changeSet:
+        object: {}
+    - sortedColumn: ''
+    - _columnSummaryValues:
+        ordered: []
+    - checkboxRowSelect: true
+    - _compatibilityMode: true
+    - showColumnBorders: true
+    - clearSelectionLabel: Clear selection
+    - _renderedDataWithTypes: null
+    - columnAllowOverflow:
+        ordered: []
+    - beforeCursor: ''
+    - serverPaginationType: limitOffsetBased
+    - onRowSelect: ''
+    - showDownloadButton: true
+    - selectedIndex: null
+    - defaultSortDescending: false
+    - _sortedDisplayedDataIndices: null
+    - dynamicColumnSettings: null
+    - totalRowCount: ''
+    - recordUpdates:
+        ordered:
+          - array: []
+    - newRow: null
+    - emptyMessage: No rows found
+    - columnEditable:
+        ordered: []
+    - _viewerColumnSummaryTypes:
+        object: {}
+    - filters:
+        ordered:
+          - array: []
+    - displayedDataIndices: null
+    - disableSorting:
+        ordered: []
+    - columnMappers:
+        ordered: []
+    - showClearSelection: false
+    - doubleClickToEdit: false
+    - overflowType: pagination
+    - _reverseSortedDisplayedDataIndices: null
+    - showTableBorder: true
+    - selectedCell:
+        object:
+          index: null
+          data: null
+          columnName: null
+    - columns:
+        - Title
+        - Description
+        - Sales
+        - id
+        - name
+        - email
+        - sales
+        - request_timestamp
+        - elb_name
+        - request_ip
+        - request_port
+        - backend_ip
+        - backend_port
+        - request_processing_time
+        - backend_processing_time
+        - client_response_time
+        - elb_response_code
+        - backend_response_code
+        - received_bytes
+        - sent_bytes
+        - request_verb
+        - url
+        - protocol
+        - user_agent
+        - ssl_cipher
+        - ssl_protocol
+    - defaultSelectedRow: first
+    - freezeActionButtonColumns: false
+    - sort: null
+    - _columns:
+        - Title
+        - Description
+        - Sales
+        - id
+        - name
+        - email
+        - sales
+        - request_timestamp
+        - elb_name
+        - request_ip
+        - request_port
+        - backend_ip
+        - backend_port
+        - request_processing_time
+        - backend_processing_time
+        - client_response_time
+        - elb_response_code
+        - backend_response_code
+        - received_bytes
+        - sent_bytes
+        - request_verb
+        - url
+        - protocol
+        - user_agent
+        - ssl_cipher
+        - ssl_protocol
+    - sortByRawValue:
+        ordered: []
+    - calculatedColumns: []
+    - selectedRow:
+        object:
+          index: null
+          data: null
+    - showPaginationOnTop: false
+    - _reverseDisplayedDataIndices: null
+    - nextAfterCursor: ''
+    - useCompactMode: false
+style:
+  ordered: []
+position2:
+  position2:
+    row: 4
+    col: 2
+    height: 8
+    width: 8
+mobilePosition2:
+  position2:
+    row: 1
+    col: 2
+    height: 8
+    width: 8
+createdAt: 2019-11-29T04:22:15.439Z
