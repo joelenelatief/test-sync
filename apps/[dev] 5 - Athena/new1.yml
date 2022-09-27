@@ -1,0 +1,19 @@
+id: new1
+type: widget
+subtype: GlobalWidget
+template:
+  ordered:
+    - showFetchingIndicator: boolean
+    - heightType: auto
+    - name: new
+    - pageUuid: 1baf1446-2eef-11ed-b90a-effd3f6f0fad
+    - childNamespace: new1
+style:
+  ordered: []
+position2:
+  position2:
+    row: 15.2
+    col: 7
+    height: 2.4
+    width: 5
+createdAt: 2022-09-08T01:41:17.398Z
