@@ -1,0 +1,23 @@
+id: authlogin1
+type: widget
+subtype: AuthLoginWidget
+template:
+  ordered:
+    - label: ''
+    - authResourceName: '[dev] custom_auth (redirect)'
+    - authType: custom
+    - style:
+        ordered: []
+style:
+  ordered: []
+position2:
+  position2:
+    row: 4
+    height: 1
+    width: 4
+mobilePosition2:
+  position2:
+    row: 3
+    height: 1
+    width: 4
+createdAt: 2019-11-28T02:48:59.099Z
