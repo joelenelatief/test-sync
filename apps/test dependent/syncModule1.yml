@@ -1,0 +1,17 @@
+id: syncModule1
+type: widget
+subtype: GlobalWidget
+template:
+  ordered:
+    - showFetchingIndicator: boolean
+    - heightType: auto
+    - name: sync module
+    - pageUuid: 5cb5d6f0-3e99-11ed-b7d8-67b122f5543a
+    - childNamespace: syncModule1
+style:
+  ordered: []
+position2:
+  position2:
+    height: 2.4
+    width: 11
+createdAt: 2022-10-04T23:25:50.370Z
