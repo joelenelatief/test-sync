@@ -3,5 +3,5 @@ pageUuid: cf7f836a-18d9-11ed-b5e8-274f948b70f9
 appTemplate:
   queryStatusVisibility: false
   rootScreen: null
-  version: 2.98.0
+  version: 2.103.2
   markdownLinkBehavior: auto
