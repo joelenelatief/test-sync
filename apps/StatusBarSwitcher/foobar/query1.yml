@@ -2,7 +2,6 @@ id: query1
 type: datasource
 subtype: RESTQuery
 resourceName: bacc5edc-28a1-4d0f-b90a-5f83f0ea48ee
-resourceDisplayName: GraphQL API
 template:
   ordered:
     - queryRefreshTime: ''
