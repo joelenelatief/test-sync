@@ -1,0 +1,7 @@
+version: 43.0.9
+pageUuid: 2594f110-6077-11ed-9d1b-af70455705c8
+appTemplate:
+  rootScreen: null
+  isGlobalWidget: true
+  version: 2.103.2
+  markdownLinkBehavior: auto
