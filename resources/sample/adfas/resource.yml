@@ -1,0 +1,22 @@
+databaseName: ''
+databaseUsername: admin@seed.retool.com
+displayName: adfas
+dynamicallyQueryable: false
+editPrivilege: false
+environment: production
+host: asdf
+options:
+  connectionString: ''
+  credentialPrivileges:
+    allowRead: true
+    allowWrite: true
+  queryEditorModes:
+    allowGuiMode: true
+    allowSqlMode: true
+  tds: '7_4'
+  version: SqlQueryUnified
+port: '1433'
+ssl: false
+type: mssql
+uuid: 3928d1a2-b3f0-421e-8044-3a4d3728d697
+version: 1.0.0
