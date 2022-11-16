@@ -1,0 +1,27 @@
+databaseName: ASD
+databaseUsername: admin@seed.retool.com
+displayName: ASDFAD
+dynamicallyQueryable: false
+editPrivilege: false
+environment: production
+host: ASDF
+options:
+  authentication: user_password
+  connectionString: ''
+  credentialPrivileges:
+    allowRead: true
+    allowWrite: true
+  queryEditorModes:
+    allowGuiMode: true
+    allowSqlMode: true
+  sshHost: ''
+  sshPassword: ''
+  sshPrivateKeyName: ''
+  sshTunnelEnabled: false
+  sshUsername: ''
+  version: SqlQueryUnified
+port: '5432'
+ssl: false
+type: postgresql
+uuid: 4fb05c11-6937-4400-9a20-101bd904e345
+version: 1.0.0
