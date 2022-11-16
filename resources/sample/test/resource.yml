@@ -1,0 +1,27 @@
+databaseName: ''
+databaseUsername: admin@seed.retool.com
+displayName: test
+dynamicallyQueryable: false
+editPrivilege: false
+environment: production
+host: '123'
+options:
+  authentication: user_password
+  connectionString: ''
+  credentialPrivileges:
+    allowRead: true
+    allowWrite: true
+  queryEditorModes:
+    allowGuiMode: true
+    allowSqlMode: true
+  sshHost: ''
+  sshPassword: ''
+  sshPrivateKeyName: ''
+  sshTunnelEnabled: false
+  sshUsername: ''
+  version: SqlQueryUnified
+port: '5432'
+ssl: false
+type: postgresql
+uuid: 5da939c0-7bf1-47a5-bb7f-d39f4c054a45
+version: 1.0.0
