@@ -4,7 +4,7 @@ displayName: adfas
 dynamicallyQueryable: false
 editPrivilege: false
 environment: production
-host: asdf
+host: asdfn
 options:
   connectionString: ''
   credentialPrivileges:
