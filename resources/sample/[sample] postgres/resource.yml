@@ -1,0 +1,19 @@
+databaseName: sample
+databaseUsername: postgres
+displayName: '[sample] postgres'
+dynamicallyQueryable: false
+editPrivilege: false
+environment: production
+host: sample-postgres
+options:
+  connectionString: ''
+  sshHost: ''
+  sshPassword: ''
+  sshPrivateKeyName: ''
+  sshTunnelEnabled: false
+  sshUsername: ''
+port: '5433'
+ssl: false
+type: postgresql
+uuid: bae176ec-7f67-4940-b206-a24d60fbe2ce
+version: 1.0.0
