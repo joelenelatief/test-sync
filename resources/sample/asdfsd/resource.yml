@@ -4,7 +4,7 @@ displayName: asdfsd
 dynamicallyQueryable: false
 editPrivilege: false
 environment: production
-host: asdds
+host: asddsASDF
 options:
   authentication: user_password
   connectionString: ''
