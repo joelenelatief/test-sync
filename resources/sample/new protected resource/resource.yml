@@ -4,7 +4,7 @@ displayName: new protected resource
 dynamicallyQueryable: false
 editPrivilege: false
 environment: production
-host: ;lj lk
+host: ;lj lkasdfads
 options:
   authentication: user_password
   connectionString: ''
