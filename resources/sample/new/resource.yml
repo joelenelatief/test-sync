@@ -4,7 +4,7 @@ displayName: new
 dynamicallyQueryable: false
 editPrivilege: false
 environment: production
-host: afsdfs
+host: afsdfsadfadfa
 options:
   authentication: user_password
   connectionString: ''
