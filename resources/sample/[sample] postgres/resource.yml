@@ -6,13 +6,14 @@ editPrivilege: false
 environment: production
 host: sample-postgres
 options:
+  authentication: user_password
   connectionString: ''
   sshHost: ''
   sshPassword: ''
   sshPrivateKeyName: ''
   sshTunnelEnabled: false
   sshUsername: ''
-port: '5433'
+port: '123'
 ssl: false
 type: postgresql
 uuid: bae176ec-7f67-4940-b206-a24d60fbe2ce
