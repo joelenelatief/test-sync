@@ -1,0 +1,19 @@
+id: newUnprotected1
+type: widget
+subtype: GlobalWidget
+template:
+  ordered:
+    - showFetchingIndicator: boolean
+    - heightType: auto
+    - name: new unprotected 1
+    - pageUuid: 84fe3b12-6f2b-11ed-8f3a-c3db350cd7cf
+    - childNamespace: newUnprotected1
+style:
+  ordered: []
+position2:
+  position2:
+    row: 2.6
+    col: 4
+    height: 2.4
+    width: 8
+createdAt: 2022-12-01T16:15:02.048Z
