@@ -13,9 +13,6 @@ options:
   headers:
     - - Authorization
       - Bearer
-  urlparams:
-    - - null
-      - kkl
 port: null
 ssl: null
 type: restapi
