@@ -1,0 +1,116 @@
+id: getAverageTimetoActivation
+type: datasource
+subtype: SqlQuery
+resourceName: segment-bigquery
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - lastReceivedFromResourceAt: null
+    - databasePasswordOverride: ''
+    - queryDisabledMessage: ''
+    - servedFromCache: false
+    - successMessage: ''
+    - queryDisabled: 'true'
+    - playgroundQuerySaveId: latest
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: true
+    - showFailureToaster: true
+    - query: >-
+        DECLARE date_start, date_end DATE;
+
+        set (date_start, date_end) = ({{dateRange1.value.start}},
+        {{dateRange1.value.end}});
+
+
+        with accounts_plus_lifecycle as (
+          SELECT distinct acc.name, acc.id, acc.account_status_committed__c, acc.customer_tier__c, acc.customer_since__c,
+          usage_scores.stage 
+          from analytics.dim_sfdc_accounts acc 
+          left join success_analytics.fct_account_usage_scores usage_scores on usage_scores.sfdc_account_id = acc.id
+          and cast(usage_scores.created_at as date) = date_end
+          where acc.customer_tier__c = 'Scale'
+          and acc.account_status_committed__c IN ('Active Customer', 'Delinquent')
+          and (usage_scores.stage IN UNNEST({{multiselect1.value}}) OR usage_scores.stage is null)
+        )
+
+        select
+          SUM(curr_rev.arr) as current_arr,
+          SUM(prev_rev.arr) as prev_arr, 
+          COUNT(acc.id) as num_customers,
+          SUM(
+            CASE WHEN (cast(acc.customer_since__c as date) >= date_start
+                       AND (acc.stage IN UNNEST({{multiselect1.value}}) OR acc.stage is null)) then 1 else 0 end
+          ) as num_new_customers, 
+          AVG(activation.days_until_activation) as average_days_to_activation,
+        from
+          accounts_plus_lifecycle acc
+          left join analytics.fct_sfdc_revenue_by_booking_day curr_rev on acc.id = curr_rev.account_id
+          and curr_rev.date = date_end
+          left join analytics.fct_sfdc_revenue_by_booking_day prev_rev on acc.id = prev_rev.account_id
+          and prev_rev.date = date_start
+          left join analytics.dim_sfdc_account_activation activation on activation.sfdc_account_id = acc.id
+         left join analytics_salesforce_base.implementation__c lifecycle 
+         on lifecycle.id = acc.id 
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - error: null
+    - privateParams: []
+    - runWhenPageLoadsDelay: ''
+    - warningCodes: []
+    - data: null
+    - importedQueryInputs:
+        ordered: []
+    - isImported: false
+    - showSuccessToaster: true
+    - dataArray: []
+    - cacheKeyTtl: '86400'
+    - databaseHostOverride: ''
+    - metadata: null
+    - queryRunTime: null
+    - changesetObject: ''
+    - shouldUseLegacySql: false
+    - errorTransformer: >-
+        // The variable 'data' allows you to reference the request's data in the
+        transformer. 
+
+        // example: return data.find(element => element.isError)
+
+        return data.error
+    - finished: null
+    - databaseNameOverride: ''
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - showLatestVersionUpdatedWarning: false
+    - timestamp: 0
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - runWhenPageLoads: false
+    - transformer: >-
+        // type your code here
+
+        // example: return formatDataAsArray(data).filter(row => row.quantity >
+        20)
+
+        return data
+    - events: []
+    - queryTimeout: '10000'
+    - requireConfirmation: false
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: true
+    - allowedGroups: []
+    - databaseUsernameOverride: ''
+    - shouldEnableBatchQuerying: false
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2022-05-17T19:50:33.709Z
+folder: overview_metrics

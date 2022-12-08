@@ -1,0 +1,52 @@
+id: statistic13
+type: widget
+subtype: StatisticWidget2
+template:
+  ordered:
+    - clickable: false
+    - positiveTrend: '{{ self.value >= 0 }}'
+    - signDisplay: auto
+    - secondaryCurrency: USD
+    - secondarySuffix: ''
+    - align: left
+    - secondaryPrefix: ''
+    - secondaryEnableTrend: true
+    - secondaryDecimalPlaces: null
+    - hidden: 'true'
+    - showSeparators: true
+    - formattingStyle: decimal
+    - showInEditor: false
+    - secondaryPositiveTrend: '{{ self.secondaryValue >= 0 }}'
+    - tooltipText: ''
+    - currency: USD
+    - value: ''
+    - style:
+        ordered:
+          - positive: rgb(30, 207, 109)
+    - secondarySignDisplay: trendArrows
+    - suffix: Days
+    - labelCaption: ''
+    - prefix: ''
+    - secondaryPadDecimal: false
+    - label: Average Time to Activation
+    - secondaryFormattingStyle: percent
+    - icon: ''
+    - events:
+        ordered: []
+    - enableTrend: false
+    - secondaryValue: ''
+    - decimalPlaces: '0'
+    - padDecimal: false
+    - maintainSpaceWhenHidden: false
+    - secondaryShowSeparators: true
+style:
+  ordered: []
+position2:
+  position2:
+    container: container4
+    subcontainer: 8759d
+    row: -4.440892098500626e-16
+    col: 6
+    height: 0.8
+    width: 3
+createdAt: 2022-05-17T20:37:31.476Z

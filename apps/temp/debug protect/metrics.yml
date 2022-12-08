@@ -1,0 +1,31 @@
+id: metrics
+type: function
+subtype: Function
+template:
+  ordered:
+    - funcBody: >
+        let data = {{formatDataAsArray(metricsOverTime.data)}};
+
+        let tabDict = {
+          adoption_change_status: "adoption_change",
+          app_change_status: "active_app_percent_change",
+          editor_change_status: "active_editors_percent_change",
+          user_change_status: "active_users_percent_change"
+        };
+
+
+        //let status_array = ['app_change_status', 'editor_change_status',
+        'user_change_status', 'adoption_change_status'];
+
+        return _.keyBy(
+          _(data).groupBy({{tabs1.value}})
+          .map((group, status) => ({
+            status: status,
+            totalCurrArr: _.sumBy(group, 'current_arr'),
+            totalPrevArr: _.sumBy(group, 'prev_arr'),
+            averageChange: _.meanBy(group, tabDict[{{tabs1.value}}]),
+            count: group.length
+          })).value(), 'status'); // .groupBy creates an array with 5 arrays by the key status
+    - value: ''
+createdAt: 2022-05-19T19:05:40.298Z
+folder: lifecycle_metrics

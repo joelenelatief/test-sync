@@ -1,0 +1,26 @@
+id: containerTitle13
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: bottom
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: '#### Growing'
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: container13
+    rowGroup: header
+    height: 0.6
+    width: 8
+createdAt: 2022-05-19T04:45:57.143Z

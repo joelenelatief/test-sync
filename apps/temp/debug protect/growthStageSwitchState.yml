@@ -1,0 +1,14 @@
+id: growthStageSwitchState
+type: state
+subtype: State
+template:
+  ordered:
+    - _persistedValueGetter: null
+    - _persistedValueSetter: null
+    - persistValue: false
+    - persistedValueKey: ''
+    - value: >-
+        ["Declining", "Steady", "Growing", "Heavy Grow", "Heavy Decline",
+        "Inactive"]
+createdAt: 2022-06-02T15:09:02.138Z
+folder: lifecycle_metrics

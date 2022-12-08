@@ -1,0 +1,17 @@
+id: filteredMetricsOverTime
+type: function
+subtype: Function
+template:
+  ordered:
+    - funcBody: >-
+        let data = {{formatDataAsArray(metricsOverTime.data)}}
+
+        let stages = {{growthStageSwitchState.value}}
+
+        let lifecycleStages = {{multiselect1.value}}
+          
+        return data.filter(x => stages.includes(x[{{tabs1.value}}]) &&
+        (lifecycleStages.includes(x.stage) || !x.stage)) 
+    - value: ''
+createdAt: 2022-05-19T19:40:54.605Z
+folder: lifecycle_metrics

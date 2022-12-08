@@ -1,0 +1,49 @@
+id: statistic36
+type: widget
+subtype: StatisticWidget2
+template:
+  ordered:
+    - clickable: false
+    - positiveTrend: '{{ self.value >= 0 }}'
+    - signDisplay: auto
+    - secondaryCurrency: USD
+    - secondarySuffix: ''
+    - align: left
+    - secondaryPrefix: ''
+    - secondaryEnableTrend: true
+    - secondaryDecimalPlaces: '2'
+    - hidden: false
+    - showSeparators: true
+    - formattingStyle: currency
+    - showInEditor: false
+    - secondaryPositiveTrend: '{{ self.secondaryValue >= 0 }}'
+    - tooltipText: ''
+    - currency: USD
+    - value: '{{metrics.value.Inactive.totalCurrArr}}'
+    - secondarySignDisplay: trendArrows
+    - suffix: ''
+    - labelCaption: ''
+    - prefix: ''
+    - secondaryPadDecimal: false
+    - label: ARR
+    - secondaryFormattingStyle: percent
+    - icon: ''
+    - events:
+        ordered: []
+    - enableTrend: false
+    - secondaryValue: ''
+    - decimalPlaces: '0'
+    - padDecimal: false
+    - maintainSpaceWhenHidden: false
+    - secondaryShowSeparators: true
+style:
+  ordered: []
+position2:
+  position2:
+    container: container14
+    subcontainer: 6a0fb
+    row: -4.440892098500626e-16
+    col: 6
+    height: 0.8
+    width: 6
+createdAt: 2022-05-19T22:14:04.930Z

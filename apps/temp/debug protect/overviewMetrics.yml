@@ -1,0 +1,36 @@
+id: overviewMetrics
+type: function
+subtype: Function
+template:
+  ordered:
+    - funcBody: >-
+        let data = {{formatDataAsArray(metricsOverTime.data)}};
+
+        let start_date = {{dateRange1.value.start}}
+
+        let end_date = {{dateRange1.value.end}}
+
+
+        let numNewCustomers = data.filter(x => x.customer_since <= end_date &&
+        x.customer_since >= start_date).length
+
+        let numCurrCustomers = data.length
+
+
+        let newARR = _.sumBy(_(data).filter(x => (x.customer_since <= end_date
+        && x.customer_since >= start_date)).map(x => ({name: x.name, currentARR:
+        x.current_arr})).value(), x => x.currentARR)
+
+        let currARR = _.sumBy(_(data).map(x => ({name: x.name, currentARR:
+        x.current_arr})).value(), x => x.currentARR)
+
+        let prevARR = _.sumBy(_(data).map(x => ({name: x.name, prevARR:
+        x.prev_arr})).value(), x => x.prevARR)
+
+        let arrGrowth = (currARR - prevARR)/prevARR
+
+
+        return {numNewCustomers, currARR, arrGrowth, numCurrCustomers}
+    - value: ''
+createdAt: 2022-06-03T04:15:16.164Z
+folder: overview_metrics

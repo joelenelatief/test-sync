@@ -1,0 +1,50 @@
+id: statistic33
+type: widget
+subtype: StatisticWidget2
+template:
+  ordered:
+    - clickable: false
+    - positiveTrend: '{{ self.value >= 0 }}'
+    - signDisplay: auto
+    - secondaryCurrency: USD
+    - secondarySuffix: ''
+    - align: left
+    - secondaryPrefix: ''
+    - secondaryEnableTrend: true
+    - secondaryDecimalPlaces: null
+    - hidden: false
+    - showSeparators: true
+    - formattingStyle: decimal
+    - showInEditor: false
+    - secondaryPositiveTrend: '{{ self.secondaryValue >= 0 }}'
+    - tooltipText: >-
+        Average Percent Change: {{(100*metrics.value['Heavy
+        Decline'].averageChange).toFixed(2)}}%
+    - currency: USD
+    - value: '{{metrics.value[''Heavy Decline''].count}}'
+    - secondarySignDisplay: trendArrows
+    - suffix: ''
+    - labelCaption: More than 20% drop
+    - prefix: ''
+    - secondaryPadDecimal: false
+    - label: Heavy Decline Accounts
+    - secondaryFormattingStyle: percent
+    - icon: ''
+    - events:
+        ordered: []
+    - enableTrend: false
+    - secondaryValue: ''
+    - decimalPlaces: null
+    - padDecimal: false
+    - maintainSpaceWhenHidden: false
+    - secondaryShowSeparators: true
+style:
+  ordered: []
+position2:
+  position2:
+    container: container11
+    subcontainer: 6a0fb
+    row: 2.5999999999999996
+    height: 0.8
+    width: 6
+createdAt: 2022-05-19T18:40:59.663Z

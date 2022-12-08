@@ -1,0 +1,32 @@
+id: alert1
+type: widget
+subtype: AlertWidget
+template:
+  ordered:
+    - valueToCopy: ''
+    - internalUrlHashParams: ''
+    - exportFileType: csv
+    - buttonType: action
+    - url: ''
+    - newWindow: false
+    - exportQuery: ''
+    - action: ''
+    - internalUrlQuery: ''
+    - internalUrlPath: ''
+    - title: Note
+    - type: info
+    - exportFileName: ''
+    - description: >-
+        Secondary values represent how many accounts transitioned out of the
+        corresponding stage since {{dateRange1.value.start}}
+    - buttonText: ''
+style:
+  ordered: []
+position2:
+  position2:
+    container: container15
+    rowGroup: header
+    col: 4
+    height: 1
+    width: 8
+createdAt: 2022-12-08T01:07:21.751Z

@@ -1,0 +1,18 @@
+id: scaleCsNavBar1
+type: widget
+subtype: GlobalWidget
+template:
+  ordered:
+    - showFetchingIndicator: boolean
+    - heightType: auto
+    - name: '[Scale CS] Nav Bar'
+    - pageUuid: f027c5c4-a10b-4cdc-901c-994e5542a8bb
+    - childNamespace: scaleCsNavBar1
+style:
+  ordered: []
+position2:
+  position2:
+    subcontainer: sidebarFrame1
+    height: 2.6
+    width: 1
+createdAt: 2022-12-08T21:01:56.506Z
