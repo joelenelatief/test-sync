@@ -1,0 +1,15 @@
+id: sidebarFrame1
+type: frame
+subtype: SidebarFrameWidget
+template:
+  ordered:
+    - loading: false
+    - showFooter: true
+    - showHeader: false
+    - hidden: false
+    - isInEditMode: false
+    - isHiddenOnDesktop: false
+    - isHiddenOnMobile: true
+style:
+  ordered: []
+createdAt: 2022-11-11T21:47:49.726Z

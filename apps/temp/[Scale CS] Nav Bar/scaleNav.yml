@@ -1,0 +1,329 @@
+id: scaleNav
+type: widget
+subtype: NavigationWidget2
+template:
+  ordered:
+    - _disabledByIndex:
+        - false
+        - ''
+        - ''
+        - false
+        - false
+        - false
+        - ''
+        - false
+        - false
+        - false
+        - false
+        - false
+    - heightType: auto
+    - iconByIndex:
+        array: []
+    - srcWidth: null
+    - _iconByIndex:
+        - bold/interface-alert-information-circle-alternate
+        - bold/image-flash-2-alternate
+        - bold/shopping-bag-suitcase-3-alternate
+        - ''
+        - ''
+        - ''
+        - bold/money-graph
+        - bold/interface-arrows-curvy-right
+        - ''
+        - ''
+        - ''
+        - ''
+    - src: ''
+    - overflowMode: scroll
+    - _parentKeyByIndex:
+        - ''
+        - ''
+        - ''
+        - 26fd1
+        - 26fd1
+        - 26fd1
+        - ''
+        - ''
+        - cef51
+        - cef51
+        - cef51
+        - cef51
+    - _highlightByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - false
+        - ''
+        - ''
+        - false
+        - false
+        - false
+        - ''
+    - parentKeyByIndex:
+        array: []
+    - highlightByIndex:
+        array: []
+    - _appTargetByIndex:
+        - 0d2adc78-311d-11ec-97c6-8f75ae7d63d5
+        - 3cbced84-99b7-11ec-810e-33b31f23a8fd
+        - ff111b14-281c-11ed-aa2e-db5305d55e6f
+        - ff111b14-281c-11ed-aa2e-db5305d55e6f
+        - 6d814fce-27c3-11ed-9cf6-cba3124aa7a3
+        - ''
+        - 6d9f421c-db98-11ec-9b07-77139f781a67
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+    - appTargetByIndex:
+        array: []
+    - hidden: false
+    - data:
+        array: []
+    - srcHeight: null
+    - itemTypeByIndex:
+        array: []
+    - showInEditor: false
+    - _itemTypeByIndex:
+        - app
+        - app
+        - app
+        - app
+        - custom
+        - custom
+        - app
+        - app
+        - custom
+        - custom
+        - custom
+        - custom
+    - orientation: vertical
+    - tooltipText: ''
+    - hiddenByIndex:
+        array: []
+    - _hiddenByIndex:
+        - false
+        - ''
+        - ''
+        - false
+        - false
+        - false
+        - ''
+        - false
+        - false
+        - false
+        - false
+        - false
+    - storageBlobId: ''
+    - _captionByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+    - _hasMigratedNestedItems: true
+    - captionByIndex:
+        array: []
+    - altText: ''
+    - itemMode: static
+    - dbBlobId: ''
+    - _tooltipByIndex:
+        - Overview of the Scale book of business
+        - One-stop shop for all Scale accounts
+        - PDFs for driving customer engagement
+        - ''
+        - ''
+        - ''
+        - Analytics for Scale Programs
+        - Workflows that power Scale Programs
+        - ''
+        - ''
+        - ''
+        - ''
+    - _automaticallyHighlightedIndices:
+        array: []
+    - tooltipByIndex:
+        array: []
+    - events:
+        - ordered:
+            - event: click
+            - type: util
+            - method: openUrl
+            - pluginId: ''
+            - targetId: 81a34
+            - params:
+                ordered:
+                  - url: >-
+                      https://retoolin.tryretool.com/workflows/63bf2915-52e0-4188-8458-b7754a09f997
+                  - options:
+                      ordered:
+                        - newTab: true
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: click
+            - type: util
+            - method: openUrl
+            - pluginId: ''
+            - targetId: 2ee73
+            - params:
+                ordered:
+                  - options:
+                      ordered:
+                        - newTab: true
+                  - url: >-
+                      https://retoolin.tryretool.com/workflows/dc1967ef-f4b1-4bda-960a-2f778232c513
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: click
+            - type: util
+            - method: openUrl
+            - pluginId: ''
+            - targetId: b67ed
+            - params:
+                ordered:
+                  - options:
+                      ordered:
+                        - newTab: true
+                  - url: >-
+                      https://retoolin.tryretool.com/workflows/0fe22e27-0407-46d4-85af-3eaa38fdaff9
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: click
+            - type: util
+            - method: openUrl
+            - pluginId: ''
+            - targetId: c273f
+            - params:
+                ordered:
+                  - options:
+                      ordered:
+                        - newTab: true
+                  - url: >-
+                      https://retoolin.tryretool.com/workflows/ec620cbc-0cd2-47a6-8608-810c1b82c4ab
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: click
+            - type: util
+            - method: openUrl
+            - pluginId: ''
+            - targetId: '05124'
+            - params:
+                ordered:
+                  - url: >-
+                      https://retoolin.tryretool.com/workflows/560f6e1f-4bd5-4f00-891c-7db17f5ce187
+                  - options:
+                      ordered:
+                        - newTab: true
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: click
+            - type: util
+            - method: openApp
+            - pluginId: ''
+            - targetId: 10c4e
+            - params:
+                ordered:
+                  - uuid: 6d814fce-27c3-11ed-9cf6-cba3124aa7a3
+                  - options:
+                      ordered:
+                        - queryParams:
+                            - ordered:
+                                - key: selectedAccount
+                                - value: 0015A00002GEHuFQAX
+                        - hashParams:
+                            - ordered:
+                                - key: startDate
+                                - value: 2022-11-08T10
+                            - ordered:
+                                - key: ''
+                                - value: ''
+            - waitType: debounce
+            - waitMs: '0'
+    - _ids:
+        - '465e0'
+        - '70359'
+        - e1147
+        - 99c94
+        - 10c4e
+        - '05124'
+        - 77afb
+        - 336af
+        - c273f
+        - b67ed
+        - 2ee73
+        - 81a34
+    - iconPositionByIndex:
+        array: []
+    - _iconPositionByIndex:
+        - left
+        - left
+        - left
+        - left
+        - left
+        - left
+        - left
+        - left
+        - left
+        - left
+        - left
+        - left
+    - _keyByIndex:
+        - ''
+        - ''
+        - 26fd1
+        - ''
+        - ''
+        - ''
+        - ''
+        - cef51
+        - ''
+        - ''
+        - ''
+        - ''
+    - disabled: false
+    - keyByIndex:
+        array: []
+    - _labels:
+        - Scale Team Accounts
+        - ''
+        - Monthly Business Reviews (MBR)
+        - MBR Generator
+        - Sample MBR (Chipper Cash)
+        - MBR Workflow
+        - Scale Program Metrics
+        - Scale Workflows
+        - Q3 At-Risk Builders
+        - Q4 Proactive Expansion
+        - Q4 Community OH
+        - Q4 Builder Tutorial - Approval Dashboard
+    - srcType: dbBlobId
+    - disabledByIndex:
+        array: []
+    - horizontalAlignment: left
+    - maintainSpaceWhenHidden: false
+    - labels:
+        array: []
+style:
+  ordered: []
+position2:
+  position2:
+    container: moduleContainer
+    row: 0.7999999999999998
+    height: 0.8
+    width: 12
+createdAt: 2022-11-11T21:47:49.801Z
