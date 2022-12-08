@@ -1,0 +1,52 @@
+id: statistic14
+type: widget
+subtype: StatisticWidget2
+template:
+  ordered:
+    - clickable: false
+    - positiveTrend: '{{ self.value >= 0 }}'
+    - signDisplay: auto
+    - secondaryCurrency: USD
+    - secondarySuffix: ''
+    - align: left
+    - secondaryPrefix: ''
+    - secondaryEnableTrend: true
+    - secondaryDecimalPlaces: null
+    - hidden: 'true'
+    - showSeparators: true
+    - formattingStyle: currency
+    - showInEditor: false
+    - secondaryPositiveTrend: '{{ self.secondaryValue >= 0 }}'
+    - tooltipText: ''
+    - currency: USD
+    - value: 7552.8
+    - style:
+        ordered:
+          - positive: rgb(30, 207, 109)
+    - secondarySignDisplay: trendArrows
+    - suffix: ''
+    - labelCaption: Since last month
+    - prefix: ''
+    - secondaryPadDecimal: false
+    - label: '% of Customer that Reached their Launch Date'
+    - secondaryFormattingStyle: percent
+    - icon: ''
+    - events:
+        ordered: []
+    - enableTrend: false
+    - secondaryValue: 0.08
+    - decimalPlaces: null
+    - padDecimal: false
+    - maintainSpaceWhenHidden: false
+    - secondaryShowSeparators: true
+style:
+  ordered: []
+position2:
+  position2:
+    container: container4
+    subcontainer: 8759d
+    row: -4.440892098500626e-16
+    col: 9
+    height: 0.8
+    width: 3
+createdAt: 2022-05-17T20:37:45.773Z

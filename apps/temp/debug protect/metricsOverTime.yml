@@ -1,0 +1,181 @@
+id: metricsOverTime
+type: datasource
+subtype: SqlQuery
+resourceName: segment-bigquery
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - lastReceivedFromResourceAt: null
+    - databasePasswordOverride: ''
+    - queryDisabledMessage: ''
+    - servedFromCache: false
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: latest
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: true
+    - showFailureToaster: true
+    - query: |-
+        with deduped_usage_scores as (
+          select
+            *
+          except
+            (rn)
+          from
+            (
+              select
+                scores.*,
+                ROW_NUMBER() over (
+                  PARTITION BY sfdc_account_id,
+                  cast(created_at as date)
+                  ORDER BY
+                    created_at DESC
+                ) as rn,
+              from
+                success_analytics.fct_account_health_scores as scores
+            )
+          where
+            rn = 1
+            and customer_tier = 'Scale'
+        )
+        select
+          curr.name,
+          curr.sfdc_account_id,
+          curr.created_at as curr_created_at,
+          prev.created_at as prev_created_at,
+          curr.arr as current_arr,
+          prev.arr as prev_arr,
+          curr.segment,
+          curr.mode as stage,
+          curr.sentiment,
+          curr.next_renewal_date,
+          curr.customer_pov,
+          curr.adoption,
+          curr.skill_level,
+          curr.customer_since,
+          curr.total_seats,
+          curr.number_of_employees,
+          curr_apps.count_apps_active_30_days as current_active_apps,
+          prev_apps.count_apps_active_30_days as prev_active_apps,
+          curr.arr as current_arr,
+          prev.arr as prev_arr,
+          SAFE_DIVIDE(
+            curr_apps.count_apps_active_30_days - prev_apps.count_apps_active_30_days,
+            prev_apps.count_apps_active_30_days
+          ) as active_app_percent_change,
+          CASE WHEN SAFE_DIVIDE(
+            curr_apps.count_apps_active_30_days - prev_apps.count_apps_active_30_days,
+            prev_apps.count_apps_active_30_days
+          ) >= 0.2 THEN 'Heavy Grow' WHEN SAFE_DIVIDE(
+            curr_apps.count_apps_active_30_days - prev_apps.count_apps_active_30_days,
+            prev_apps.count_apps_active_30_days
+          ) <= -0.2 THEN 'Heavy Decline' WHEN curr_apps.count_apps_active_30_days < prev_apps.count_apps_active_30_days THEN 'Declining' WHEN curr_apps.count_apps_active_30_days > prev_apps.count_apps_active_30_days OR (curr_apps.count_apps_active_30_days > 0 AND prev_apps.count_apps_active_30_days is NULL) THEN 'Growing' WHEN curr_apps.count_apps_active_30_days = 0
+          AND prev_apps.count_apps_active_30_days = 0 THEN 'Inactive' ELSE 'Steady' END as app_change_status,
+          curr.count_users_active_30_days_current as current_active_users,
+          prev.count_users_active_30_days_current as prev_active_users,
+          SAFE_DIVIDE(
+            curr.count_users_active_30_days_current - prev.count_users_active_30_days_current,
+            prev.count_users_active_30_days_current
+          ) as active_users_percent_change,
+          CASE WHEN SAFE_DIVIDE(
+            curr.count_users_active_30_days_current - prev.count_users_active_30_days_current,
+            prev.count_users_active_30_days_current
+          ) >= 0.2 THEN 'Heavy Grow' WHEN SAFE_DIVIDE(
+            curr.count_users_active_30_days_current - prev.count_users_active_30_days_current,
+            prev.count_users_active_30_days_current
+          ) <= -0.2 THEN 'Heavy Decline' WHEN curr.count_users_active_30_days_current < prev.count_users_active_30_days_current THEN 'Declining' WHEN curr.count_users_active_30_days_current > prev.count_users_active_30_days_current OR (curr.count_users_active_30_days_current > 0 AND prev.count_users_active_30_days_current is NULL) THEN 'Growing' WHEN curr.count_users_active_30_days_current = 0
+          AND prev.count_users_active_30_days_current = 0 THEN 'Inactive' ELSE 'Steady' END as user_change_status,
+          curr.count_editors_active_30_days_current as current_active_editors,
+          prev.count_editors_active_30_days_current as prev_active_editors,
+          SAFE_DIVIDE(
+            curr.count_editors_active_30_days_current - prev.count_editors_active_30_days_current,
+            prev.count_editors_active_30_days_current
+          ) as active_editors_percent_change,
+          CASE WHEN SAFE_DIVIDE(
+            curr.count_editors_active_30_days_current - prev.count_editors_active_30_days_current,
+            prev.count_editors_active_30_days_current
+          ) >= 0.2 THEN 'Heavy Grow' WHEN SAFE_DIVIDE(
+            curr.count_editors_active_30_days_current - prev.count_editors_active_30_days_current,
+            prev.count_editors_active_30_days_current
+          ) <= -0.2 THEN 'Heavy Decline' WHEN curr.count_editors_active_30_days_current < prev.count_editors_active_30_days_current THEN 'Declining' WHEN curr.count_editors_active_30_days_current > prev.count_editors_active_30_days_current OR (curr.count_editors_active_30_days_current > 0 AND prev.count_editors_active_30_days_current is NULL) THEN 'Growing' WHEN curr.count_editors_active_30_days_current = 0
+          AND prev.count_editors_active_30_days_current = 0 THEN 'Inactive' ELSE 'Steady' END as editor_change_status,
+          curr.adoption as current_adoption,
+          prev.adoption as prev_adoption,
+          SAFE_DIVIDE(curr.adoption - prev.adoption, prev.adoption) as adoption_change,
+          CASE WHEN SAFE_DIVIDE(curr.adoption - prev.adoption, prev.adoption) >= 0.2 THEN 'Heavy Grow' WHEN SAFE_DIVIDE(curr.adoption - prev.adoption, prev.adoption) <= -0.2 THEN 'Heavy Decline' WHEN curr.adoption < prev.adoption THEN 'Declining' WHEN curr.adoption > prev.adoption or (curr.adoption > 0 AND prev.adoption is NULL) THEN 'Growing' WHEN curr.adoption = 0
+          AND prev.adoption = 0 THEN 'Inactive' ELSE 'Steady' END as adoption_change_status,
+        from
+          analytics.dim_sfdc_accounts acc
+          left join deduped_usage_scores as curr on acc.id = curr.sfdc_account_id
+          left join deduped_usage_scores as prev on cast(prev.created_at as date) = {{dateRange1.value.start}}
+          and curr.sfdc_account_id = prev.sfdc_account_id
+          left join analytics.fct_daily_active_sfdc_account_apps curr_apps on curr_apps.sfdc_account_id = curr.sfdc_account_id
+          and curr_apps.date = {{dateRange1.value.end}}
+          left join analytics.fct_daily_active_sfdc_account_apps prev_apps on prev_apps.sfdc_account_id = curr.sfdc_account_id
+          and prev_apps.date = {{dateRange1.value.start}}
+          -- left join analytics.dim_sfdc_accounts acc on acc.id = curr.sfdc_account_id
+        where
+          -- acc.account_status_committed__c IN ('Active Customer', 'Delinquent')
+          acc.customer_tier__c = 'Scale'
+          and acc.name != 'Test'
+          and acc.account_status_committed__c IN ('Active Customer')
+          and cast(curr.created_at as date) = {{dateRange1.value.end}}
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - error: null
+    - privateParams: []
+    - runWhenPageLoadsDelay: ''
+    - warningCodes: []
+    - data: null
+    - importedQueryInputs:
+        ordered: []
+    - isImported: false
+    - showSuccessToaster: true
+    - dataArray: []
+    - cacheKeyTtl: '86400'
+    - databaseHostOverride: ''
+    - metadata: null
+    - queryRunTime: null
+    - changesetObject: ''
+    - shouldUseLegacySql: false
+    - errorTransformer: >-
+        // The variable 'data' allows you to reference the request's data in the
+        transformer. 
+
+        // example: return data.find(element => element.isError)
+
+        return data.error
+    - finished: null
+    - databaseNameOverride: ''
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - showLatestVersionUpdatedWarning: false
+    - timestamp: 0
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - runWhenPageLoads: false
+    - transformer: |-
+        let counter = _.countBy(data.name);
+        return _.sortBy(Object.keys(counter), x => -counter[x])
+    - events: []
+    - queryTimeout: '10000'
+    - requireConfirmation: false
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: true
+    - allowedGroups: []
+    - databaseUsernameOverride: ''
+    - shouldEnableBatchQuerying: false
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2022-05-18T22:54:27.580Z
+folder: lifecycle_metrics

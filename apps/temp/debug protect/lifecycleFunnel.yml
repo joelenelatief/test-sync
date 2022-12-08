@@ -1,0 +1,130 @@
+id: lifecycleFunnel
+type: datasource
+subtype: SqlQuery
+resourceName: segment-bigquery
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - lastReceivedFromResourceAt: null
+    - databasePasswordOverride: ''
+    - queryDisabledMessage: ''
+    - servedFromCache: false
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: latest
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: true
+    - showFailureToaster: true
+    - query: >-
+        DECLARE date_start, date_end DATE;
+
+        set (date_start, date_end) = ({{dateRange1.value.start}},
+        {{dateRange1.value.end}});
+
+
+        with dedupe_lifecycle_modes as (
+          select
+            *
+          except
+            (rn)
+          from
+            (
+              select
+                history.*,
+                ROW_NUMBER() over (
+                  PARTITION BY parentid
+                  ORDER BY
+                    createddate DESC
+                ) as rn,
+              FROM
+                analytics_salesforce_base.implementation__history as history
+              where
+                field in ('Mode__c')
+                and EXTRACT(date from createddate) >= date_start
+                and EXTRACT(date from createddate) <= date_end
+            )
+          where
+            rn = 1
+        )
+
+        select
+          acc.id as account_id,
+          acc.name,
+          modes_history.oldvalue as oldvalue,
+          ifnull(modes_history.newvalue, lifecycle.mode__c) as newvalue,
+          EXTRACT(DATE from modes_history.createddate) as date_changed,
+        from
+          analytics.dim_sfdc_accounts acc
+          left join analytics_salesforce_base.implementation__c lifecycle on acc.id = lifecycle.account__c
+          -- left join dedupe_lifecycle_stages stages_history on lifecycle.id = stages_history.parentid
+          left join dedupe_lifecycle_modes modes_history on lifecycle.id = modes_history.parentid
+        where
+          acc.customer_tier__c = 'Scale'
+          and acc.name != 'Test'
+          and acc.account_status_committed__c IN ('Active Customer')
+          and lifecycle.isdeleted = false
+        order by
+          name
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - error: null
+    - privateParams: []
+    - runWhenPageLoadsDelay: ''
+    - warningCodes: []
+    - data: null
+    - importedQueryInputs:
+        ordered: []
+    - isImported: false
+    - showSuccessToaster: true
+    - dataArray: []
+    - cacheKeyTtl: ''
+    - databaseHostOverride: ''
+    - metadata: null
+    - queryRunTime: null
+    - changesetObject: ''
+    - shouldUseLegacySql: false
+    - errorTransformer: >-
+        // The variable 'data' allows you to reference the request's data in the
+        transformer. 
+
+        // example: return data.find(element => element.isError)
+
+        return data.error
+    - finished: null
+    - databaseNameOverride: ''
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - showLatestVersionUpdatedWarning: false
+    - timestamp: 0
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - runWhenPageLoads: false
+    - transformer: >-
+        // type your code here
+
+        // example: return formatDataAsArray(data).filter(row => row.quantity >
+        20)
+
+        return data
+    - events: []
+    - queryTimeout: '10000'
+    - requireConfirmation: false
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - databaseUsernameOverride: ''
+    - shouldEnableBatchQuerying: false
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2022-12-02T01:24:37.715Z
+folder: lifecycle_funnel

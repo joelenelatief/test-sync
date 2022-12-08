@@ -1,0 +1,26 @@
+id: containerTitle15
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: '#### Lifecycle Stage Funnel'
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: container15
+    rowGroup: header
+    height: 0.6
+    width: 4
+createdAt: 2022-06-02T05:25:30.165Z

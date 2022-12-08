@@ -1,0 +1,88 @@
+id: tabs1
+type: widget
+subtype: TabsWidget2
+template:
+  ordered:
+    - _disabledByIndex:
+        - false
+        - ''
+        - ''
+        - ''
+    - _values:
+        - adoption_change_status
+        - app_change_status
+        - editor_change_status
+        - user_change_status
+    - iconByIndex:
+        array: []
+    - values:
+        array: []
+    - alignment: justify
+    - _iconByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+    - hidden: false
+    - data:
+        array: []
+    - targetContainerId: ''
+    - selectedItem: null
+    - showInEditor: false
+    - _defaultValue: null
+    - navigateContainer: false
+    - value: '{{ self.values[0] }}'
+    - style:
+        ordered:
+          - selectedText: rgb(57, 108, 247)
+    - hiddenByIndex:
+        array: []
+    - _hiddenByIndex:
+        - false
+        - ''
+        - ''
+        - ''
+    - _hasMigratedNestedItems: true
+    - itemMode: static
+    - selectedIndex: null
+    - _tooltipByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+    - tooltipByIndex:
+        array: []
+    - selectedLabel: ''
+    - events: []
+    - _ids:
+        - 2fc8b
+        - 0d489
+        - '72170'
+        - 9ad26
+    - iconPositionByIndex:
+        array: []
+    - _iconPositionByIndex:
+        - left
+        - ''
+        - ''
+        - ''
+    - disabled: false
+    - linePosition: bottom
+    - _labels:
+        - Adoption
+        - Active Apps
+        - Active Builders
+        - Active Users
+    - disabledByIndex:
+        array: []
+    - maintainSpaceWhenHidden: false
+    - labels:
+        array: []
+style:
+  ordered: []
+position2:
+  position2:
+    row: 2.799999999999993
+    height: 1.4
+    width: 8
+createdAt: 2022-05-18T22:49:36.785Z

@@ -1,0 +1,53 @@
+id: dateRange1
+type: widget
+subtype: DateRangeWidget
+template:
+  ordered:
+    - minDate: ''
+    - readOnly: false
+    - iconAfter: ''
+    - dateFormat: MMM d, yyyy
+    - hidden: '{{!dateSwitch.value}}'
+    - customValidation: ''
+    - hideValidationMessage: false
+    - textBefore: ''
+    - validationMessage: ''
+    - textAfter: ''
+    - showInEditor: false
+    - showClear: false
+    - tooltipText: ''
+    - labelAlign: right
+    - formDataKey: '{{ self.id }}'
+    - value:
+        ordered:
+          - start: '{{moment().subtract(1, ''week'').format(''YYYY-MM-DD'')}}'
+          - end: '{{moment().subtract(1, ''day'').format(''YYYY-MM-DD'')}}'
+    - startPlaceholder: Start Date
+    - labelCaption: ''
+    - maxDate: ''
+    - labelWidth: ''
+    - label: ''
+    - formattedValue: ''
+    - _validate: false
+    - labelWidthUnit: '%'
+    - invalid: false
+    - iconBefore: bold/interface-calendar-remove
+    - endPlaceholder: End Date
+    - events:
+        ordered: []
+    - textBetween: '-'
+    - loading: false
+    - disabled: false
+    - labelPosition: left
+    - labelWrap: false
+    - maintainSpaceWhenHidden: false
+    - required: false
+style:
+  ordered: []
+position2:
+  position2:
+    row: -1.3322676295501878e-15
+    col: 2
+    height: 1
+    width: 3
+createdAt: 2022-05-18T22:18:31.659Z

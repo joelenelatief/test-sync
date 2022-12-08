@@ -1,0 +1,48 @@
+id: statistic35
+type: widget
+subtype: StatisticWidget2
+template:
+  ordered:
+    - clickable: false
+    - positiveTrend: '{{ self.value >= 0 }}'
+    - signDisplay: auto
+    - secondaryCurrency: USD
+    - secondarySuffix: ''
+    - align: left
+    - secondaryPrefix: ''
+    - secondaryEnableTrend: true
+    - secondaryDecimalPlaces: null
+    - hidden: false
+    - showSeparators: true
+    - formattingStyle: decimal
+    - showInEditor: false
+    - secondaryPositiveTrend: '{{ self.secondaryValue >= 0 }}'
+    - tooltipText: ''
+    - currency: USD
+    - value: '{{metrics.value.Inactive.count}}'
+    - secondarySignDisplay: trendArrows
+    - suffix: ''
+    - labelCaption: Stagnant at 0
+    - prefix: ''
+    - secondaryPadDecimal: false
+    - label: Inactive Accounts
+    - secondaryFormattingStyle: percent
+    - icon: ''
+    - events:
+        ordered: []
+    - enableTrend: false
+    - secondaryValue: ''
+    - decimalPlaces: null
+    - padDecimal: false
+    - maintainSpaceWhenHidden: false
+    - secondaryShowSeparators: true
+style:
+  ordered: []
+position2:
+  position2:
+    container: container14
+    subcontainer: 6a0fb
+    row: -1.5543122344752192e-15
+    height: 0.8
+    width: 6
+createdAt: 2022-05-19T22:06:37.162Z
