@@ -1,0 +1,481 @@
+id: table3
+type: widget
+subtype: TableWidget
+template:
+  ordered:
+    - showCustomButton: false
+    - sortMappedValue:
+        ordered: []
+    - _filteredSortedRenderedDataWithTypes: null
+    - heightType: fixed
+    - normalizedData: null
+    - rowHeight: standard
+    - saveChangesDisabled: ''
+    - columnTypeProperties:
+        ordered:
+          - current_arr:
+              ordered:
+                - showSeparators: true
+                - currency: USD
+                - padDecimal: true
+          - prev_arr:
+              ordered:
+                - showSeparators: true
+                - currency: USD
+                - padDecimal: true
+          - segment:
+              ordered:
+                - optionData: '{{ currentColumn }}'
+                - colorMode: auto
+                - allowCustomValue: true
+                - optionLabels: null
+                - optionColors: null
+                - optionValues: null
+          - stage:
+              ordered:
+                - optionData: '{{ currentColumn }}'
+                - colorMode: auto
+                - allowCustomValue: true
+                - optionLabels: null
+                - optionColors: null
+                - optionValues: null
+          - sentiment:
+              ordered: []
+          - next_renewal_date:
+              ordered: []
+          - customer_pov:
+              ordered:
+                - optionData: '{{ currentColumn }}'
+                - colorMode: auto
+                - allowCustomValue: true
+                - optionLabels: null
+                - optionColors: null
+                - optionValues: null
+          - skill_level:
+              ordered: []
+          - customer_since:
+              ordered: []
+          - adoption:
+              ordered:
+                - showSeparators: true
+                - padDecimal: true
+          - user_change_status:
+              ordered:
+                - optionData: '{{ currentColumn }}'
+                - colorMode: auto
+                - allowCustomValue: true
+                - optionLabels: null
+                - optionColors: null
+                - optionValues: null
+          - active_app_percent_change:
+              ordered:
+                - showSeparators: true
+                - padDecimal: true
+          - active_users_percent_change:
+              ordered:
+                - showSeparators: true
+                - padDecimal: true
+          - active_editors_percent_change:
+              ordered:
+                - showSeparators: true
+                - padDecimal: true
+          - adoption_change:
+              ordered:
+                - showSeparators: true
+                - padDecimal: true
+          - Custom Column 1:
+              ordered:
+                - optionData: '{{ currentColumn }}'
+                - colorMode: auto
+                - allowCustomValue: true
+                - optionLabels: null
+                - optionColors: null
+                - optionValues: null
+    - columnWidths:
+        - object:
+            id: name
+            value: 204
+        - object:
+            id: prev_arr
+            value: 124
+        - object:
+            id: adoption_change
+            value: 154.00000762939453
+        - object:
+            id: active_app_percent_change
+            value: 153
+    - showSummaryFooter: false
+    - disableRowSelectInteraction: false
+    - columnWidthsMobile: []
+    - hasNextAfterCursor: ''
+    - columnTypeSpecificExtras:
+        ordered:
+          - name:
+              ordered:
+                - buttonType: internal-url
+                - internalUrlQuery: '"[]"'
+                - newWindow: true
+                - internalUrlPath: 017c75c0-9672-11ec-aafa-4f84916e3fb8
+                - internalUrlHashParams: >-
+                    "[{\"key\":\"selectedAccount\",\"value\":\"{{
+                    currentRow.sfdc_account_id }}\"}]"
+    - onRowAdded: ''
+    - columnHeaderNames:
+        ordered:
+          - active_users_change: Users Diff
+          - active_app_percent_change: Active Apps Change
+          - next_renewal_date: Renewal Date (months)
+          - current_active_apps: Active Apps
+          - name: Account Name
+          - user_change_status: Users Change
+          - sentiment: Sentiment
+          - number_of_employees: Employees
+          - total_seats: Total Seats
+          - segment: Segment
+          - current_active_editors: Active Editors
+          - current_active_users: Active Users
+          - prev_arr: ARR (1 Year Ago)
+          - skill_level: Skill
+          - Custom Column 1: Bucket (Selected Tab)
+          - adoption_change: Adoption Change
+          - adoption: Adoption
+          - customer_since: Customer Since (months)
+          - active_users_percent_change: Active Users Change
+          - prev_active_users: Prev Active Users
+          - current_arr: ARR
+          - active_editors_percent_change: Active Editors Change
+          - current_adoption: Adoption (MAU)
+          - stage: Stage
+    - alwaysShowPaginator: false
+    - columnColors:
+        ordered:
+          - active_users_change: ''
+          - active_app_percent_change: ''
+          - next_renewal_date: >-
+              {{moment(self).diff(moment(), 'months',true) < 6 ? 'rgba(255, 195,
+              0, 0.45)' : ''}}
+          - active_editors_change: ''
+          - app_change_status: ''
+          - prev_adoption: ''
+          - current_active_apps: ''
+          - prev_arr_1: ''
+          - active_app_change: ''
+          - created_at: ''
+          - name: ''
+          - rank: ''
+          - user_change_status: ''
+          - current_arr_1: ''
+          - date: ''
+          - editor_change_status: ''
+          - sentiment: >-
+              {{ self === 'Green' ? '#90EE9045' : self === 'Red' ? '#FF573345' :
+              self === 'Yellow' ? '#FFC30045' : null}}
+          - number_of_employees: ''
+          - total_seats: ''
+          - segment: ''
+          - current_active_editors: ''
+          - current_active_users: ''
+          - prev_arr: ''
+          - skill_level: ''
+          - Custom Column 1: ''
+          - prev_created_at: ''
+          - customer_pov: ''
+          - curr_created_at: ''
+          - adoption_change: ''
+          - adoption: >-
+              {{ self < 0.5 ? '#FF7F7F45' : self < 0.8 ? '#f4a12545' : self < 1
+              ? '#90EE9045' : '#50C87845' }}
+          - customer_since: >-
+              {{moment().diff(moment(self), 'months',true) < 6 ? '#ADD8E645' :
+              ''}}
+          - prev_active_editors: ''
+          - sfdc_account_id: ''
+          - adoption_change_status: ''
+          - active_users_percent_change: ''
+          - prev_active_users: ''
+          - current_arr: ''
+          - active_editors_percent_change: ''
+          - current_adoption: ''
+          - stage: ''
+          - prev_active_apps: ''
+    - columnFrozenAlignments:
+        ordered:
+          - name: left
+    - allowMultiRowSelect: false
+    - columnFormats:
+        ordered:
+          - name: button
+          - current_arr: CurrencyDataCell
+          - prev_arr: CurrencyDataCell
+          - segment: SingleTagDataCell
+          - stage: SingleTagDataCell
+          - sentiment: TextDataCell
+          - next_renewal_date: HtmlDataCell
+          - customer_pov: SingleTagDataCell
+          - skill_level: RatingDataCell
+          - customer_since: HtmlDataCell
+          - adoption: PercentDataCell
+          - user_change_status: SingleTagDataCell
+          - active_app_percent_change: PercentDataCell
+          - active_users_percent_change: PercentDataCell
+          - active_editors_percent_change: PercentDataCell
+          - adoption_change: PercentDataCell
+          - Custom Column 1: SingleTagDataCell
+    - columnRestrictedEditing:
+        ordered: []
+    - showFilterButton: true
+    - _columnVisibility:
+        ordered:
+          - active_editors_change: false
+          - app_change_status: false
+          - prev_adoption: false
+          - current_active_apps: true
+          - active_app_change: false
+          - created_at: false
+          - rank: false
+          - user_change_status: false
+          - editor_change_status: false
+          - sentiment: false
+          - segment: false
+          - current_active_editors: true
+          - prev_arr: false
+          - skill_level: false
+          - prev_created_at: false
+          - customer_pov: false
+          - curr_created_at: false
+          - prev_active_editors: false
+          - sfdc_account_id: false
+          - adoption_change_status: false
+          - prev_active_users: false
+          - active_editors_percent_change: true
+          - current_adoption: false
+          - prev_active_apps: false
+    - _columnSummaryTypes:
+        ordered:
+          - current_arr: sum
+          - prev_arr: sum
+          - segment: ''
+          - stage: ''
+          - sentiment: ''
+          - next_renewal_date: ''
+          - customer_pov: ''
+          - skill_level: average
+          - customer_since: ''
+          - adoption: average
+          - user_change_status: ''
+          - active_app_percent_change: average
+          - active_users_percent_change: average
+          - active_editors_percent_change: average
+          - adoption_change: average
+          - Custom Column 1: ''
+    - _columnsWithLegacyBackgroundColor:
+        set: []
+    - showAddRowButton: false
+    - _unfilteredSelectedIndex: null
+    - nextBeforeCursor: ''
+    - columnVisibility:
+        ordered: []
+    - selectedPageIndex: '0'
+    - applyDynamicSettingsToColumnOrder: true
+    - rowColor:
+        array: []
+    - actionButtonColumnName: Actions
+    - resetAfterSave: true
+    - filterStackType: and
+    - downloadRawData: false
+    - showFetchingIndicator: true
+    - serverPaginated: false
+    - data: '{{filteredMetricsOverTime.value}}'
+    - displayedData: null
+    - actionButtons: []
+    - actionButtonSelectsRow: true
+    - selectRowByDefault: true
+    - defaultSortByColumn: current_arr
+    - paginationOffset: 0
+    - columnAlignment:
+        ordered:
+          - active_app_percent_change: right
+          - next_renewal_date: right
+          - name: left
+          - user_change_status: left
+          - sentiment: left
+          - segment: left
+          - prev_arr: right
+          - skill_level: left
+          - Custom Column 1: left
+          - customer_pov: left
+          - adoption_change: right
+          - adoption: right
+          - customer_since: right
+          - active_users_percent_change: right
+          - current_arr: right
+          - active_editors_percent_change: right
+          - stage: left
+    - columnSummaries:
+        object: {}
+    - showBoxShadow: true
+    - sortedDesc: false
+    - customButtonName: ''
+    - columnMappersRenderAsHTML:
+        ordered: []
+    - showRefreshButton: true
+    - pageSize: '20'
+    - useDynamicColumnSettings: false
+    - style:
+        ordered:
+          - border: rgb(237, 237, 237)
+          - headerBackground: rgb(0, 0, 0)
+          - headerText: rgb(255, 255, 255)
+          - toolbarBackground: rgb(255, 255, 255)
+    - actionButtonPosition: left
+    - dynamicRowHeights: false
+    - bulkUpdateAction: ''
+    - afterCursor: ''
+    - onCustomButtonPressQueryName: ''
+    - changeSet:
+        object: {}
+    - sortedColumn: ''
+    - _columnSummaryValues:
+        ordered:
+          - current_arr: ''
+          - prev_arr: ''
+          - segment: ''
+          - stage: ''
+          - sentiment: ''
+          - next_renewal_date: ''
+          - customer_pov: ''
+          - skill_level: ''
+          - customer_since: ''
+          - adoption: ''
+          - user_change_status: ''
+          - active_app_percent_change: ''
+          - active_users_percent_change: ''
+          - active_editors_percent_change: ''
+          - adoption_change: ''
+          - Custom Column 1: ''
+    - checkboxRowSelect: true
+    - _compatibilityMode: false
+    - showColumnBorders: true
+    - clearSelectionLabel: Clear selection
+    - _renderedDataWithTypes: null
+    - columnAllowOverflow:
+        ordered: []
+    - beforeCursor: ''
+    - serverPaginationType: limitOffsetBased
+    - onRowSelect: ''
+    - showDownloadButton: true
+    - selectedIndex: null
+    - defaultSortDescending: true
+    - _sortedDisplayedDataIndices: null
+    - dynamicColumnSettings: null
+    - totalRowCount: ''
+    - recordUpdates:
+        array: []
+    - newRow: null
+    - emptyMessage: No rows found
+    - columnEditable:
+        ordered:
+          - name: false
+          - adoption_change: false
+          - active_editors_percent_change: false
+          - active_app_percent_change: false
+          - active_users_percent_change: false
+          - Custom Column 1: false
+    - _viewerColumnSummaryTypes:
+        object: {}
+    - filters:
+        array: []
+    - displayedDataIndices: null
+    - disableSorting:
+        ordered: []
+    - columnMappers:
+        ordered:
+          - segment: ''
+          - stage: ''
+          - next_renewal_date: >-
+              {{moment(self).format('MMM D, YYYY')}} <span
+              style="font-size:90%;color:#777">({{moment(self).diff(moment(),
+              'months') }}m)</span>
+          - customer_pov: ''
+          - customer_since: >-
+              {{moment(self).format('MMM D, YYYY')}} <span
+              style="font-size:90%;color:#777">({{moment().diff(moment(self),
+              'months',false) }}m)</span>
+          - user_change_status: ''
+          - adoption: ''
+          - Custom Column 1: >-
+              {{tabs1.value == 'adoption_change_status' ?
+              currentRow.adoption_change_status : tabs1.value ==
+              'app_change_status' ? currentRow.app_change_status : tabs1.value
+              ==  'editor_change_status' ? currentRow.editor_change_status :
+              currentRow.user_change_status }}
+    - showClearSelection: false
+    - doubleClickToEdit: true
+    - overflowType: scroll
+    - _reverseSortedDisplayedDataIndices: null
+    - showTableBorder: true
+    - selectedCell:
+        object:
+          index: null
+          data: null
+          columnName: null
+    - columns: []
+    - defaultSelectedRow: first
+    - freezeActionButtonColumns: false
+    - sort: null
+    - _columns:
+        - sfdc_account_id
+        - name
+        - current_arr
+        - prev_arr
+        - segment
+        - next_renewal_date
+        - stage
+        - Custom Column 1
+        - sentiment
+        - customer_pov
+        - adoption
+        - skill_level
+        - customer_since
+        - total_seats
+        - number_of_employees
+        - app_change_status
+        - user_change_status
+        - editor_change_status
+        - adoption_change_status
+        - current_adoption
+        - adoption_change
+        - current_active_apps
+        - active_app_percent_change
+        - current_active_users
+        - active_users_percent_change
+        - current_active_editors
+        - active_editors_percent_change
+        - prev_adoption
+        - prev_active_apps
+        - prev_active_users
+        - prev_active_editors
+        - curr_created_at
+        - prev_created_at
+        - current_arr_1
+        - prev_arr_1
+    - sortByRawValue:
+        ordered: []
+    - calculatedColumns:
+        - Custom Column 1
+    - selectedRow:
+        object:
+          index: null
+          data: null
+    - showPaginationOnTop: false
+    - _reverseDisplayedDataIndices: null
+    - nextAfterCursor: ''
+    - useCompactMode: false
+style:
+  ordered: []
+position2:
+  position2:
+    row: 10.400000000000007
+    height: 20.999999999999996
+    width: 12
+createdAt: 2022-05-19T03:30:05.164Z

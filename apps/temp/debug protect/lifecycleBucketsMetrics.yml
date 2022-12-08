@@ -1,0 +1,67 @@
+id: lifecycleBucketsMetrics
+type: function
+subtype: Function
+template:
+  ordered:
+    - funcBody: >-
+        let historyData = {{formatDataAsArray(lifecycleFunnel.data)}};
+
+        let currentstages = {
+          "Driving adoption": {
+            count: 0
+          },
+          "Not Activated": {
+            count: 0
+          },
+          "Steady state": {
+            count: 0
+          },
+          "Expanding": {
+            count: 0
+          },
+          "Recovery": {
+            count: 0
+          },
+          null: {
+            count: 0
+          }
+        };
+
+        let history = {
+          "Not Activated": {
+            count: 0
+          },
+          "Driving adoption": {
+            count: 0
+          },
+          "Steady state": {
+            count: 0
+          },
+          "Expanding": {
+            count: 0
+          },
+          "Recovery": {
+            count: 0
+          },
+          null: {
+            count: 0
+          }
+        };
+
+        historyData.reduce(function(res, value) {
+          // console.log("first: " + value.newvalue);
+          res[value.newvalue].count += 1;
+          return res;
+        }, currentstages);
+
+        historyData.reduce(function(res, value) {
+          // console.log("second: " + value.oldvalue);
+          res[value.oldvalue].count += 1;
+          return res;
+        }, history);
+
+        return {currentstages, history} // Note: we'll have to reformat the
+        metricsOverTime, as that is affected by selected lifecycle stages
+    - value: ''
+createdAt: 2022-06-02T06:06:24.929Z
+folder: lifecycle_funnel

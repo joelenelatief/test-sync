@@ -1,0 +1,68 @@
+id: notActivatedState
+type: widget
+subtype: StatisticWidget2
+template:
+  ordered:
+    - clickable: false
+    - positiveTrend: '{{ self.value >= 0 }}'
+    - signDisplay: auto
+    - secondaryCurrency: USD
+    - secondarySuffix: ''
+    - align: center
+    - secondaryPrefix: ''
+    - secondaryEnableTrend: true
+    - secondaryDecimalPlaces: null
+    - hidden: false
+    - showSeparators: true
+    - formattingStyle: decimal
+    - showInEditor: false
+    - secondaryPositiveTrend: '{{ self.secondaryValue >= 0 }}'
+    - tooltipText: ''
+    - currency: USD
+    - value: '{{lifecycleBucketsMetrics.value.currentstages["Not Activated"].count}}'
+    - secondarySignDisplay: auto
+    - suffix: ''
+    - labelCaption: ''
+    - prefix: ''
+    - secondaryPadDecimal: false
+    - label: Not Activated
+    - secondaryFormattingStyle: decimal
+    - icon: ''
+    - events:
+        - ordered:
+            - event: click
+            - type: state
+            - method: setValue
+            - pluginId: lifecycleState
+            - targetId: null
+            - params:
+                ordered:
+                  - value: Not Activated
+            - waitType: debounce
+            - waitMs: '0'
+        - ordered:
+            - event: click
+            - type: datasource
+            - method: trigger
+            - pluginId: setDrilldownState
+            - targetId: null
+            - params:
+                ordered: []
+            - waitType: debounce
+            - waitMs: '0'
+    - enableTrend: false
+    - secondaryValue: '{{lifecycleBucketsMetrics.value.history["Not Activated"].count}}'
+    - decimalPlaces: null
+    - padDecimal: false
+    - maintainSpaceWhenHidden: false
+    - secondaryShowSeparators: true
+style:
+  ordered: []
+position2:
+  position2:
+    container: container16
+    subcontainer: 908ce
+    col: 3
+    height: 0.8
+    width: 6
+createdAt: 2022-06-02T05:26:39.307Z

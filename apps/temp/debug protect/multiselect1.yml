@@ -1,0 +1,162 @@
+id: multiselect1
+type: widget
+subtype: MultiselectWidget2
+template:
+  ordered:
+    - imageByIndex:
+        array: []
+    - _disabledByIndex:
+        - ''
+        - false
+        - false
+        - false
+        - false
+    - showSelectionIndicator: true
+    - _values:
+        - Not Activated
+        - Driving adoption
+        - Steady state
+        - Expanding
+        - Recovery
+    - iconByIndex:
+        array: []
+    - values:
+        array: []
+    - readOnly: false
+    - iconAfter: ''
+    - _iconByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+    - wrapTags: true
+    - overlayMinWidth: null
+    - selectedIndexes:
+        array: []
+    - selectedItems:
+        array: []
+    - inputValue: ''
+    - hidden: false
+    - customValidation: ''
+    - data:
+        array: []
+    - maxCount: null
+    - searchMode: fuzzy
+    - hideValidationMessage: false
+    - fallbackTextByIndex:
+        array: []
+    - textBefore: ''
+    - _fallbackTextByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+    - minLines: null
+    - validationMessage: ''
+    - automaticItemColors: true
+    - itemAdornmentShape: circle
+    - textAfter: ''
+    - showInEditor: false
+    - _defaultValue:
+        array: []
+    - showClear: true
+    - tooltipText: ''
+    - labelAlign: right
+    - formDataKey: '{{ self.id }}'
+    - value: '{{multiselect1.values}}'
+    - hiddenByIndex:
+        array: []
+    - labelCaption: ''
+    - labelWidth: '10'
+    - deprecatedLabels:
+        array: []
+    - _hiddenByIndex:
+        - ''
+        - false
+        - false
+        - false
+        - false
+    - placeholder: Select options
+    - _captionByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+    - itemAdornmentSize: auto
+    - label: Lifecycle Stage
+    - _hasMigratedNestedItems: true
+    - captionByIndex:
+        array: []
+    - _validate: false
+    - itemMode: static
+    - labelWidthUnit: '%'
+    - allowCustomValue: false
+    - invalid: false
+    - _tooltipByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+    - _colorByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+    - tooltipByIndex:
+        array: []
+    - iconBefore: ''
+    - colorByIndex:
+        array: []
+    - events:
+        ordered: []
+    - _ids:
+        - b46c2
+        - '32e03'
+        - 32f5c
+        - 1bc60
+        - 8b46d
+    - emptyMessage: ''
+    - selectedLabels:
+        array: []
+    - overlayMaxHeight: 375
+    - maxLines: null
+    - loading: false
+    - disabled: false
+    - labelPosition: left
+    - minCount: null
+    - _labels:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+    - labelWrap: false
+    - disabledValues:
+        array: []
+    - disabledByIndex:
+        array: []
+    - maintainSpaceWhenHidden: false
+    - _imageByIndex:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+    - required: false
+    - labels:
+        array: []
+style:
+  ordered: []
+position2:
+  position2:
+    container: container3
+    subcontainer: 8759d
+    row: 2.220446049250313e-16
+    height: 1
+    width: 12
+createdAt: 2022-05-19T00:57:38.016Z

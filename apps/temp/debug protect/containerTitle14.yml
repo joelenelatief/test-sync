@@ -1,0 +1,26 @@
+id: containerTitle14
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: bottom
+    - _defaultValue: ''
+    - tooltipText: ''
+    - value: '#### Inactive'
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: container14
+    rowGroup: header
+    height: 0.8
+    width: 8
+createdAt: 2022-05-26T23:35:09.554Z

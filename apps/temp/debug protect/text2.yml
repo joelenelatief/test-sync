@@ -1,0 +1,31 @@
+id: text2
+type: widget
+subtype: TextWidget2
+template:
+  ordered:
+    - heightType: auto
+    - horizontalAlign: left
+    - hidden: false
+    - imageWidth: fit
+    - showInEditor: false
+    - verticalAlign: center
+    - tooltipText: ''
+    - value: >-
+        #### Lifecycle Drilldown
+
+        Accounts that have {{lifecycleState.value ? `moved out of
+        **${lifecycleState.value}**` : "transitioned stages"}} since
+        {{dateRange1.value.start}}.
+    - disableMarkdown: false
+    - overflowType: scroll
+    - maintainSpaceWhenHidden: false
+style:
+  ordered: []
+position2:
+  position2:
+    container: container15
+    subcontainer: 3a30a
+    row: 3.8
+    height: 0.6000000000000001
+    width: 4
+createdAt: 2022-12-08T01:24:08.778Z

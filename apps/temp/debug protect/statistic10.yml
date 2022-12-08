@@ -1,0 +1,51 @@
+id: statistic10
+type: widget
+subtype: StatisticWidget2
+template:
+  ordered:
+    - clickable: false
+    - positiveTrend: '{{ self.value >= 0 }}'
+    - signDisplay: auto
+    - secondaryCurrency: USD
+    - secondarySuffix: ''
+    - align: left
+    - secondaryPrefix: ''
+    - secondaryEnableTrend: true
+    - secondaryDecimalPlaces: null
+    - hidden: false
+    - showSeparators: true
+    - formattingStyle: decimal
+    - showInEditor: false
+    - secondaryPositiveTrend: '{{ self.secondaryValue >= 0 }}'
+    - tooltipText: ''
+    - currency: USD
+    - value: '{{overviewMetrics.value.numCurrCustomers}}'
+    - style:
+        ordered:
+          - positive: rgb(30, 207, 109)
+    - secondarySignDisplay: trendArrows
+    - suffix: ''
+    - labelCaption: Since {{moment(dateRange1.value.start).format('M-DD-YYYY')}}
+    - prefix: ''
+    - secondaryPadDecimal: false
+    - label: '# of Customers'
+    - secondaryFormattingStyle: decimal
+    - icon: ''
+    - events:
+        ordered: []
+    - enableTrend: false
+    - secondaryValue: '{{overviewMetrics.value.numNewCustomers}}'
+    - decimalPlaces: null
+    - padDecimal: false
+    - maintainSpaceWhenHidden: false
+    - secondaryShowSeparators: true
+style:
+  ordered: []
+position2:
+  position2:
+    container: container4
+    subcontainer: 8759d
+    col: 3
+    height: 0.8
+    width: 3
+createdAt: 2022-05-17T19:43:06.554Z

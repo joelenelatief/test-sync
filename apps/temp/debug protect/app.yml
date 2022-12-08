@@ -1,0 +1,17 @@
+version: 43.0.9
+pageUuid: d5d7ac30-773c-11ed-a779-d3c408c345e7
+appTemplate:
+  appThemeId: 24
+  folders:
+    - lifecycle_metrics
+    - overview_metrics
+    - graphs
+    - lifecycle_funnel
+    - lifecycleDrilldownQueries
+    - unused
+  experimentalPerfFeatures:
+    object:
+      batchCommitModelEnabled: false
+  rootScreen: null
+  version: 2.106.0
+  markdownLinkBehavior: auto
