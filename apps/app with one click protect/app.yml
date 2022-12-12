@@ -1,0 +1,13 @@
+version: 43.0.9
+pageUuid: e7d2ce24-7197-11ed-88f7-77144ede92e0
+appTemplate:
+  queryStatusVisibility: false
+  experimentalPerfFeatures:
+    object:
+      batchCommitModelEnabled: false
+      skipDepCycleCheckingEnabled: false
+      serverDepGraphEnabled: false
+      useRuntimeV2: false
+  rootScreen: null
+  version: 2.103.3
+  markdownLinkBehavior: auto
