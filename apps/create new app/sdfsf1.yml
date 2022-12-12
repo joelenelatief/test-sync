@@ -1,0 +1,19 @@
+id: sdfsf1
+type: widget
+subtype: GlobalWidget
+template:
+  ordered:
+    - showFetchingIndicator: boolean
+    - heightType: auto
+    - name: sdfsf
+    - pageUuid: 296cb428-5fad-11ed-abd7-7bfeff999cc7
+    - childNamespace: sdfsf1
+style:
+  ordered: []
+position2:
+  position2:
+    row: 8
+    col: 6
+    height: 2.4
+    width: 6
+createdAt: 2022-11-09T21:19:10.683Z
