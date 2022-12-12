@@ -1,0 +1,19 @@
+id: unprotectedModule1
+type: widget
+subtype: GlobalWidget
+template:
+  ordered:
+    - showFetchingIndicator: boolean
+    - heightType: auto
+    - name: unprotected module
+    - pageUuid: 5e7f0c10-5fd0-11ed-aac8-0f189bf5f00f
+    - childNamespace: unprotectedModule1
+style:
+  ordered: []
+position2:
+  position2:
+    row: 2.2
+    col: 5
+    height: 1
+    width: 6
+createdAt: 2022-11-28T14:28:01.723Z
