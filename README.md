@@ -1,1 +1,2 @@
 # test-sync
+# no-permissions
