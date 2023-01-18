@@ -1,0 +1,24 @@
+id: query1
+type: datasource
+subtype: SqlQueryUnified
+resourceName: f223bf58-91e2-4841-b8dd-4f2daa715fb6
+resourceDisplayName: test delete environment
+template:
+  queryRefreshTime: ''
+  queryDisabledMessage: ''
+  successMessage: ''
+  queryDisabled: ''
+  resourceNameOverride: ''
+  runWhenModelUpdates: true
+  query: ''
+  privateParams: []
+  data: null
+  showSuccessToaster: true
+  confirmationMessage: null
+  watchedParams: []
+  timestamp: 0
+  runWhenPageLoads: false
+  queryTimeout: '10001'
+  requireConfirmation: false
+  queryThrottleTime: '750'
+createdAt: 2023-01-18T19:30:17.051Z
