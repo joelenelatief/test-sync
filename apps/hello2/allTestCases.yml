@@ -1,8 +1,0 @@
-id: allTestCases
-type: function
-subtype: Function
-template:
-  ordered:
-    - funcBody: "return [\n  {\n    name: 'Run when params change',\n    passed: true,\n\t},\n\t{\n    name: 'Manual query normally doesnt run on page load',\n    passed: {{ !manualQuery.data }},\n\t},\n\t{\n    name: 'Manual query runs on page load when flag on',\n    passed: {{ runOnPageLoad.data }},\n\t},\n  {\n    name: 'Query runs periodically',\n    passed: {{ counter.value >= 3 }},\n\t},\n  {\n    name: 'Query doesnt run when disabled',\n    passed: {{ counter.value < 5 }},\n\t},\n  {\n    name: 'Run-when-params-change query runs on page load',\n    passed: {{ normalAutoQuery.data }},\n\t},\n\t{\n    name: 'Run-when-params-change query runs when params change',\n    passed: {{ runOnParamsChange.data }},\n\t},\n  {\n    name: 'On-success query trigger',\n    passed: {{ runMeOnSuccess.data }},\n\t},\n\t{\n    name: 'On-error query trigger',\n    passed: {{ runMeOnError.data }},\n\t},\n\t{\n    name: 'async JS query works',\n    passed: {{ asyncJsQuery.data === 1 }},\n\t},\n  {\n    name: 'query with transformer works',\n    passed: {{ withTransfomer.data === 2 }},\n\t},\n  {\n    name: 'disabled query isnt marks itself clean',\n    passed: {{ !alwaysDisabled.data }},\n\t},\n  {\n    name: 'query time out works',\n    passed: {{ withTimeout.error.includes('Query timed out after 10ms') }},\n\t},\n\t{\n    name: 'Plain rest query works',\n    passed: {{ normalRestQuery.data }},\n\t},\n]"
-    - value: ''
-createdAt: 2019-07-22T02:16:50.124Z

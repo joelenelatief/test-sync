@@ -1,7 +1,0 @@
-version: 43.0.9
-pageUuid: d887b7da-1255-11ea-b589-d3d015525485
-appTemplate:
-  folders:
-    - Temporary state
-  rootScreen: null
-  version: 2.100.0
