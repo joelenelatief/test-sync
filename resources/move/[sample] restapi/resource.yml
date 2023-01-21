@@ -4,7 +4,7 @@ databaseUsername: null
 displayName: '[sample] restapi'
 dynamicallyQueryable: false
 editPrivilege: null
-  environment: production
+environment: production
 host: null
 options:
   baseURL: https://restcountries.com/v3.1asd
