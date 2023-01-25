@@ -1,0 +1,27 @@
+databaseName: ''
+databasePassword: ''
+databaseUsername: ''
+dynamicallyQueryable: false
+editPrivilege: false
+environment: production
+host: afsdfad
+options:
+  authentication: user_password
+  connectionString: ''
+  credentialPrivileges:
+    allowRead: true
+    allowWrite: true
+  queryEditorModes:
+    allowGuiMode: true
+    allowSqlMode: true
+  sshHost: ''
+  sshPassword: ''
+  sshPrivateKeyName: ''
+  sshTunnelEnabled: false
+  sshUsername: ''
+  version: SqlQueryUnified
+port: '5432'
+ssl: false
+type: postgresql
+uuid: 23fe8cb7-a932-4094-b52e-38da91fce19b
+version: 1.0.0
