@@ -1,0 +1,7 @@
+version: 43.0.9
+pageUuid: b4b046f8-a41d-11ed-b570-43420e41ed4e
+appTemplate:
+  queryStatusVisibility: false
+  rootScreen: null
+  version: 2.110.0
+  markdownLinkBehavior: auto
