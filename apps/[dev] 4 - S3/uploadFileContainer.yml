@@ -1,0 +1,22 @@
+id: uploadFileContainer
+type: widget
+subtype: ContainerWidget
+template:
+  ordered:
+    - title: ''
+    - disabled: ''
+    - spinWhenChildrenAreFetching: true
+    - showBorder: true
+    - showDropShadow: true
+    - heightType: fixed
+    - overflowType: visible
+    - style:
+        ordered: []
+style:
+  ordered: []
+position2:
+  position2:
+    row: 10
+    height: 3
+    width: 6
+createdAt: 2019-01-24T15:00:28.809Z

@@ -1,0 +1,23 @@
+id: uploadFileTitle
+type: widget
+subtype: TextWidget
+template:
+  ordered:
+    - horizontalAlign: left
+    - truncateOverflow: false
+    - verticalAlign: center
+    - scrollOverflow: false
+    - tooltipText: ''
+    - value: '#### Upload File'
+    - style:
+        ordered: []
+    - renderAsHtml: true
+    - renderAsMarkdown: true
+style:
+  ordered: []
+position2:
+  position2:
+    container: uploadFileContainer
+    height: 1
+    width: 12
+createdAt: 2019-01-24T15:00:41.001Z

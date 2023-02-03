@@ -1,0 +1,30 @@
+id: jsonDetails
+type: widget
+subtype: TextWidget
+template:
+  ordered:
+    - horizontalAlign: left
+    - truncateOverflow: false
+    - verticalAlign: center
+    - scrollOverflow: false
+    - tooltipText: ''
+    - value: |-
+        <b>{{ filePreview.data.Key }}</b>
+
+        Last modified: {{ filePreview.data.LastModified }}
+        <br>
+        File size: {{ filePreview.data.ContentLength }} B
+        <br>
+        Content type: {{ filePreview.data.ContentType }}
+    - style:
+        ordered: []
+    - renderAsHtml: true
+    - renderAsMarkdown: true
+style:
+  ordered: []
+position2:
+  position2:
+    container: filePreviewContainer
+    height: 3
+    width: 12
+createdAt: 2019-03-19T14:16:43.324Z

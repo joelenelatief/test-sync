@@ -1,0 +1,37 @@
+id: image
+type: widget
+subtype: ImageWidget
+template:
+  ordered:
+    - valueToCopy: ''
+    - isFile: false
+    - internalUrlHashParams: ''
+    - exportFileType: csv
+    - buttonType: action
+    - exportTemplate: null
+    - url: ''
+    - newWindow: false
+    - style:
+        ordered: []
+    - exportQuery: ''
+    - imageUrl: >-
+        {{
+        encodeURI('https://s3.us-east-2.amazonaws.com/retool-public-demo/'+fileList.selectedRow.data.Key)
+        }}
+    - action: ''
+    - internalUrlQuery: ''
+    - internalUrlPath: ''
+    - imageFile: ''
+    - exportFileName: ''
+    - loading: ''
+    - disabled: ''
+style:
+  ordered: []
+position2:
+  position2:
+    container: filePreviewContainer
+    row: 3
+    height: 7
+    width: 12
+    tabNum: 1
+createdAt: 2019-01-24T13:01:51.006Z
