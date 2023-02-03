@@ -1,8 +1,8 @@
-id: query1
+id: query3
 type: datasource
 subtype: SqlQueryUnified
-resourceName: 42bb4921-e42a-43e7-bced-c9440e3b68bd
-resourceDisplayName: test protect sync
+resourceName: 150ae806-9e14-4522-8244-b61c6c1fbfd2
+resourceDisplayName: 😀
 template:
   ordered:
     - queryRefreshTime: ''
@@ -13,21 +13,22 @@ template:
     - servedFromCache: false
     - successMessage: ''
     - queryDisabled: ''
-    - playgroundQuerySaveId: latest
+    - playgroundQuerySaveId: 7
     - resourceNameOverride: ''
     - runWhenModelUpdates: true
     - showFailureToaster: true
     - query: ''
-    - playgroundQueryUuid: ''
-    - playgroundQueryId: null
+    - playgroundQueryUuid: 50b7ee66-317e-4acc-9c32-94efeb1c79e1
+    - playgroundQueryId: 5
     - error: null
     - privateParams: []
     - runWhenPageLoadsDelay: ''
     - data: null
     - recordId: ''
+    - retoolVersion: 2.110.0
     - importedQueryInputs:
         ordered: []
-    - isImported: false
+    - isImported: true
     - showSuccessToaster: true
     - dataArray: []
     - cacheKeyTtl: ''
@@ -75,7 +76,7 @@ template:
         return data
     - events: []
     - tableName: ''
-    - queryTimeout: '10001'
+    - queryTimeout: '10000'
     - requireConfirmation: false
     - queryFailureConditions: ''
     - changesetIsObject: false
@@ -88,4 +89,4 @@ template:
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-createdAt: 2023-02-03T21:15:20.591Z
+createdAt: 2023-02-03T23:41:32.202Z
