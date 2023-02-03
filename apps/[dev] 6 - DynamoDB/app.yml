@@ -1,0 +1,12 @@
+version: 43.0.9
+pageUuid: e0d7eb94-125f-11ea-9ed8-978bf234afa0
+appTemplate:
+  mobileAppSettings:
+    object:
+      mobileOfflineModeEnabled: false
+  experimentalPerfFeatures:
+    object:
+      serverDepGraphEnabled: false
+      useRuntimeV2: false
+  rootScreen: null
+  version: 2.110.0
