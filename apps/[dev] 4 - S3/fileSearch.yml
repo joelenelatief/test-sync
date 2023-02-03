@@ -1,0 +1,51 @@
+id: fileSearch
+type: widget
+subtype: TextInputWidget
+template:
+  ordered:
+    - validationMaxlengthValue: ''
+    - readonly: ''
+    - disabledKeyCodes: ''
+    - showNumberCommas: false
+    - validationMaxValue: ''
+    - onBlur: ''
+    - docsSlug: textinput
+    - validatonType: ''
+    - currencyType: USD
+    - leftIconName: search
+    - initialValue: ''
+    - validationMessage: ''
+    - tooltipText: ''
+    - value: ''
+    - style:
+        ordered: []
+    - suffix: ''
+    - validationMinlengthValue: ''
+    - validationLengthValue: ''
+    - placeholder: Search files by prefix
+    - validationType: regexp
+    - label: ''
+    - currencyMajorOnly: false
+    - formattedValue: ''
+    - allowedInputsRegex: ''
+    - labelMaxWidth: ''
+    - enableValidationType: false
+    - labelPlacedOnLeft: ''
+    - onSubmit: ''
+    - validationMinValue: ''
+    - lastSubmittedAt: ''
+    - validationState:
+        object:
+          required: ''
+          validationType: ''
+    - type: text
+    - allowedRegex: ''
+    - required: false
+style:
+  ordered: []
+position2:
+  position2:
+    col: 3
+    height: 1
+    width: 3
+createdAt: 2019-01-24T13:12:47.089Z

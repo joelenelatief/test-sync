@@ -1,0 +1,23 @@
+id: filePreviewTitle
+type: widget
+subtype: TextWidget
+template:
+  ordered:
+    - horizontalAlign: left
+    - truncateOverflow: false
+    - verticalAlign: center
+    - scrollOverflow: false
+    - tooltipText: ''
+    - value: '#### 🔍 File Preview'
+    - style:
+        ordered: []
+    - renderAsHtml: true
+    - renderAsMarkdown: true
+style:
+  ordered: []
+position2:
+  position2:
+    container: fileContainer
+    height: 1
+    width: 7
+createdAt: 2019-01-24T11:27:32.049Z
