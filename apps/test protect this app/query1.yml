@@ -1,0 +1,24 @@
+id: query1
+type: datasource
+subtype: SqlQueryUnified
+resourceName: 42bb4921-e42a-43e7-bced-c9440e3b68bd
+resourceDisplayName: test protect sync
+template:
+  queryRefreshTime: ''
+  queryDisabledMessage: ''
+  successMessage: ''
+  queryDisabled: ''
+  resourceNameOverride: ''
+  runWhenModelUpdates: true
+  query: ''
+  privateParams: []
+  data: null
+  showSuccessToaster: true
+  confirmationMessage: null
+  watchedParams: []
+  timestamp: 0
+  runWhenPageLoads: false
+  queryTimeout: '10001'
+  requireConfirmation: false
+  queryThrottleTime: '750'
+createdAt: 2023-02-07T00:19:44.793Z
