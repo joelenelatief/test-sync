@@ -12,7 +12,7 @@ template:
     - servedFromCache: false
     - successMessage: ''
     - queryDisabled: ''
-    - playgroundQuerySaveId: 15
+    - playgroundQuerySaveId: 0
     - resourceNameOverride: ''
     - runWhenModelUpdates: true
     - paginationPaginationField: ''
@@ -21,14 +21,14 @@ template:
     - paginationEnabled: false
     - query: https://google.com
     - playgroundQueryUuid: 998d9ebf-16bd-45c5-95e8-c8a171680802
-    - playgroundQueryId: 8
+    - playgroundQueryId: 0
     - error: null
     - privateParams: []
     - runWhenPageLoadsDelay: ''
     - data: null
     - importedQueryInputs:
         ordered: []
-    - isImported: true
+    - isImported: false
     - showSuccessToaster: true
     - cacheKeyTtl: ''
     - requestSentTimestamp: null
@@ -59,6 +59,7 @@ template:
         ordered: []
     - enableTransformer: false
     - showUpdateSetValueDynamicallyToggle: true
+    - playgroundQueryName: Country Search
     - runWhenPageLoads: false
     - transformer: >-
         // type your code here
@@ -80,5 +81,4 @@ template:
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-    - playgroundQueryName: Country Search
 createdAt: 2023-02-07T17:51:34.626Z
