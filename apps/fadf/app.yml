@@ -1,0 +1,11 @@
+version: 43.0.9
+pageUuid: c0475f30-abd2-11ed-91cd-7fc3a1c4b9c4
+appTemplate:
+  mobileAppSettings:
+    object:
+      mobileOfflineModeEnabled: false
+      mobileOfflineModeDelaySync: false
+  queryStatusVisibility: false
+  rootScreen: null
+  version: 2.111.0
+  markdownLinkBehavior: auto
