@@ -11,6 +11,7 @@ template:
     - databasePasswordOverride: ''
     - queryDisabledMessage: ''
     - servedFromCache: false
+    - offlineUserQueryInputs: ''
     - successMessage: ''
     - queryDisabled: ''
     - playgroundQuerySaveId: latest
@@ -18,8 +19,8 @@ template:
     - runWhenModelUpdates: true
     - showFailureToaster: true
     - query: select * from users
-    - playgroundQueryUuid: 2754f887-4b57-4a0d-93ba-be85d9266429
-    - playgroundQueryId: 11
+    - playgroundQueryUuid: 79771998-bd29-4247-aa31-8129bf0b6e7a
+    - playgroundQueryId: 132
     - error: null
     - privateParams: []
     - runWhenPageLoadsDelay: ''
@@ -67,6 +68,7 @@ template:
     - enableTransformer: false
     - showUpdateSetValueDynamicallyToggle: true
     - bulkUpdatePrimaryKey: ''
+    - playgroundQueryName: Country Search
     - runWhenPageLoads: false
     - transformer: >-
         // type your code here
@@ -90,5 +92,4 @@ template:
     - queryThrottleTime: '750'
     - updateSetValueDynamically: false
     - notificationDuration: ''
-    - playgroundQueryName: Country Search
 createdAt: 2023-02-07T19:54:32.323Z
