@@ -1,0 +1,12 @@
+version: 43.0.9
+pageUuid: 7ad6174c-bf92-11ed-a4c1-bb83ff157bf8
+appTemplate:
+  queryStatusVisibility: false
+  experimentalPerfFeatures:
+    object:
+      serverDepGraphEnabled: false
+      useRuntimeV2: true
+      runtimeV2OptOut: false
+  rootScreen: null
+  version: 2.114.0
+  markdownLinkBehavior: auto
