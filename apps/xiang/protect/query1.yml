@@ -1,0 +1,23 @@
+id: query1
+type: datasource
+subtype: SqlQueryUnified
+resourceName: 51d4f9ea-0188-4bda-ac3e-f1bc9786e273
+template:
+  queryRefreshTime: ''
+  queryDisabledMessage: ''
+  successMessage: ''
+  queryDisabled: ''
+  resourceNameOverride: ''
+  runWhenModelUpdates: true
+  query: ''
+  privateParams: []
+  data: null
+  showSuccessToaster: true
+  confirmationMessage: null
+  watchedParams: []
+  timestamp: 0
+  runWhenPageLoads: false
+  queryTimeout: '10001'
+  requireConfirmation: false
+  queryThrottleTime: '750'
+createdAt: 2023-01-11T05:09:59.395Z
