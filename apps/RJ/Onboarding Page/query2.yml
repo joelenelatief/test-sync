@@ -1,0 +1,81 @@
+id: query2
+type: datasource
+subtype: SqlQuery
+resourceName: d57b73b3-57b1-4c6c-93d9-715f0ca2cd35
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - lastReceivedFromResourceAt: null
+    - databasePasswordOverride: ''
+    - queryDisabledMessage: ''
+    - servedFromCache: false
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: latest
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: true
+    - showFailureToaster: true
+    - query: SELECT * from users
+    - playgroundQueryUuid: e1b7e709-1d7d-4b68-8ed8-b38d44f79fe7
+    - playgroundQueryId: 3
+    - error: null
+    - privateParams: []
+    - runWhenPageLoadsDelay: ''
+    - warningCodes: []
+    - data: null
+    - importedQueryInputs:
+        ordered: []
+    - isImported: true
+    - showSuccessToaster: true
+    - dataArray: []
+    - cacheKeyTtl: ''
+    - requestSentTimestamp: null
+    - databaseHostOverride: ''
+    - metadata: null
+    - queryRunTime: null
+    - changesetObject: ''
+    - shouldUseLegacySql: false
+    - errorTransformer: >-
+        // The variable 'data' allows you to reference the request's data in the
+        transformer. 
+
+        // example: return data.find(element => element.isError)
+
+        return data.error
+    - finished: null
+    - databaseNameOverride: ''
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - showLatestVersionUpdatedWarning: false
+    - timestamp: 0
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - runWhenPageLoads: false
+    - transformer: >-
+        // type your code here
+
+        // example: return formatDataAsArray(data).filter(row => row.quantity >
+        20)
+
+        return data
+    - events: []
+    - queryTimeout: '10000'
+    - requireConfirmation: false
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - databaseUsernameOverride: ''
+    - shouldEnableBatchQuerying: false
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2022-12-13T19:19:50.220Z
