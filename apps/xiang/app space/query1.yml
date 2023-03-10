@@ -1,0 +1,24 @@
+id: query1
+type: datasource
+subtype: SqlQueryUnified
+resourceName: edd9347a-86d0-4437-a443-ccbdf1848fd7
+resourceDisplayName: 'renamed '
+template:
+  queryRefreshTime: ''
+  queryDisabledMessage: ''
+  successMessage: ''
+  queryDisabled: ''
+  resourceNameOverride: ''
+  runWhenModelUpdates: true
+  query: ''
+  privateParams: []
+  data: null
+  showSuccessToaster: true
+  confirmationMessage: null
+  watchedParams: []
+  timestamp: 0
+  runWhenPageLoads: false
+  queryTimeout: '10001'
+  requireConfirmation: false
+  queryThrottleTime: '750'
+createdAt: 2023-03-10T22:25:36.521Z
