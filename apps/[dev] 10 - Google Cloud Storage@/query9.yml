@@ -2,6 +2,7 @@ id: query9
 type: datasource
 subtype: DynamoQuery
 resourceName: 8777e3a1-56cf-4543-b349-c06a0cb8150c
+resourceDisplayName: '[dev] dynamodb'
 template:
   ordered:
     - queryRefreshTime: ''

@@ -2,6 +2,7 @@ id: filepicker1onFilePickTrigger
 type: datasource
 subtype: FirebaseQuery
 resourceName: ff1137aa-fd75-4c62-a47f-da360ead6e24
+resourceDisplayName: '[dev] firestore'
 template:
   ordered:
     - queryRefreshTime: ''

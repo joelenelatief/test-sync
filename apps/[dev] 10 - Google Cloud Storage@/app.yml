@@ -5,5 +5,4 @@ appTemplate:
     object:
       serverDepGraphEnabled: false
       useRuntimeV2: false
-  rootScreen: null
   version: 2.103.2
